@@ -1,0 +1,112 @@
+---
+import CallButton from "../components/CallButton.astro";
+import { Image } from "@astrojs/image/components";
+import carCrash from "/public/assets/carCrash.jpg";
+import check from "/assets/check.svg";
+---
+
+<div class="service_wrapper">
+	<h1 class="service_headline">Auto Body Service Rockville, MD</h1>
+	<Image
+		src={carCrash}
+		alt="car crash"
+		height={420}
+		width={420}
+		class="banner_image"
+	/>
+	<div class="cta">
+		<p class="service_para">
+			For when you need a car repair service in Rockville, MD. Call our Auto
+			Body and Repair for prompt and courteous service:
+		</p>
+		<ul class="mb-8 text-left">
+			<li class="list_items">
+				<img src={check} alt="check" class="icon" />
+				Collision Repair
+			</li>
+			<li class="list_items">
+				<img src={check} alt="check" class="icon" />Paintless Dent Repair
+			</li>
+			<li class="list_items">
+				<img src={check} alt="check" class="icon" />Paint matching
+			</li>
+		</ul>
+		<CallButton />
+	</div>
+	<p class="service_para">
+		We provide accident repair, rust repair, detailing and car washing, Scratch
+		and chip repair, Paint matching and touch-ups.
+	</p>
+	<p class="service_para">
+		We work with all insurance companies and will handle the claims process for
+		you, so you don't have to worry about a thing.
+	</p>
+	<p class="service_para">
+		Don't let an accident ruin your day. Trust our auto body shop for fast,
+		reliable service and get back on the road in no time. Contact us today to
+		schedule an appointment!
+	</p>
+</div>
+
+<style>
+	.service_wrapper {
+		text-align: left;
+		color: rgb(248 250 252 / 0.75);
+		margin-top: 0.5rem;
+		border-radius: 0.375rem;
+		background-color: rgb(0 0 0 / 0.75);
+		padding: 0 2rem;
+	}
+
+	.service_headline {
+		font-size: 3.75rem /* 60px */;
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	.banner_image {
+		height: 7rem /* 112px */;
+		width: 100%;
+		object-fit: cover;
+	}
+	.list_items {
+		@apply flex items-center md:text-4xl text-3xl;
+	}
+	.action__go-to-blog {
+		@apply text-base uppercase hover:underline;
+	}
+
+	.service_para {
+		font-size: 1.25rem /* 20px */;
+		line-height: 2.25rem /* 36px */;
+		margin: 0rem 0;
+		padding: 1rem 0;
+	}
+	.cta {
+		padding: 2rem 0;
+	}
+
+	.icon {
+		width: 3rem; /* 48px  */
+	}
+
+	@media (min-width: 768px) {
+		.banner_image {
+			height: 10rem /* 160px */;
+		}
+		.service_headline {
+			font-size: 4.5rem /* 72px */;
+			line-height: 1;
+			padding: 1rem 0;
+		}
+		.service_headline {
+			padding-top: 2rem /* 32px */;
+			padding-bottom: 2rem /* 32px */;
+		}
+	}
+	@media (min-width: 1024px) {
+		.icon {
+			width: 6rem /* 96px */;
+		}
+	}
+</style>

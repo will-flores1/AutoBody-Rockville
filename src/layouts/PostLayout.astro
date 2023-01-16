@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+export interface Props {
+	pageTitle: string;
+	postTitle: string;
+}
+
+const { pageTitle, postTitle } = Astro.props;
+---
+
+<Layout title={pageTitle}>
+	<h1>{postTitle}</h1>
+	<slot />
+</Layout>

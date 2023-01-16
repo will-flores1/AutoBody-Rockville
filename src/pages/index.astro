@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Hero from "../section/Hero.astro";
+import CTA from "../section/CTA.astro";
+import Info from "../section/Info.astro";
+import Contact from "../section/Contact.astro";
+import Service from "../section/Service.astro";
+---
+
+<Layout title="Auto Body Service Rockville">
+	<main class="main_wrapper">
+		<Hero />
+		<Service />
+		<CTA />
+		<Info />
+		<Contact />
+	</main>
+</Layout>
+
+<style>
+	@media (min-width: 768px) {
+		.main_wrapper {
+			padding-left: 2rem /* 32px */;
+			padding-right: 2rem /* 32px */;
+		}
+	}
+</style>
