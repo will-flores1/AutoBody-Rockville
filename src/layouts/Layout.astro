@@ -5,11 +5,10 @@ import backgroundimage from "/public/assets/bgImg.jpeg";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../const.js";
 import BaseHead from "../components/BaseHead.astro";
 export interface Props {
-	page_title: string;
 	headline: string;
 }
 
-const { title, headline } = Astro.props;
+const { headline } = Astro.props;
 ---
 
 <body>
@@ -38,6 +37,9 @@ const { title, headline } = Astro.props;
 	body {
 		width: 100%;
 		overflow-x: hidden;
+	}
+	h1 {
+		margin: 1rem 0;
 	}
 	p {
 		font-size: 1.25rem /* 20px */;

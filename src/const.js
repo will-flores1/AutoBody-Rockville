@@ -1,5 +1,5 @@
 // SEO RULES titles < 50 characters, descriptions < 150 characters
-export const COMPANY = "Auto Body Shop Rockville";
+export const INDUSTRY = "Auto Body Shop";
 export const EMAIL = "info@email.com";
 export const ADDRESS = "1621 East Gude Dr, Rockville, MD 20850";
 export const GOOGLE_MAPS_ADDRESS =
@@ -54,4 +54,10 @@ export const SERVICES_PAGE = {
 				"Paint scratches, Clear coat scratches, primer scratches, we specialize in scratch repair.",
 		},
 	],
+};
+
+export const CONTACT_US_PAGE = {
+	title: "About Us. Paint, Dent, Collision, Bumper Repair",
+	description:
+		"Auto Body Shop Rockville, MD. Specialize in Paint, Dent, Collision, Bumper Repair. European, Asian, or Domestic car, truck, or SUV, service them all.", // 149
 };

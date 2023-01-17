@@ -1,8 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Contact from "../section/Contact.astro";
+import { CONTACT_US_PAGE } from "../const.js";
+import BaseHead from "../components/BaseHead.astro";
+
+const { title, description } = CONTACT_US_PAGE;
 ---
 
-<Layout page_title="Contact Us" headline="CONTACT US">
-	<Contact />
-</Layout>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<title>{title}</title>
+	</head>
+	<Layout headline="CONTACT US">
+		<Contact />
+	</Layout>
+
+
+</html>
