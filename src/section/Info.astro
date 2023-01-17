@@ -1,11 +1,12 @@
 ---
 import { Image } from "@astrojs/image/components";
+import traffic from "../../public/assets/traffic.jpg";
 ---
 
 <div class="info_wrapper">
 	<h1 class="info_headline">Car Accidents</h1>
 	<Image
-		src="/assets/traffic.jpg"
+		src={traffic}
 		alt="cars in traffic"
 		height={420}
 		width={420}
