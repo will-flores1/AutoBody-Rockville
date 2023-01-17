@@ -1,6 +1,8 @@
 # TO-DO
 
 [] switch background to rtc
+[] remove tailwind
+[] research and add robot.txt file
 [] optimize image files sizes (webp)
 
 # Welcome to [Astro](https://astro.build)
