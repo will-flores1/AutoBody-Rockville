@@ -12,10 +12,9 @@ const { title, description } = CONTACT_US_PAGE;
 	<head>
 		<BaseHead title={title} description={description} />
 		<title>{title}</title>
+		<link rel="canonical" href={Astro.url} />
 	</head>
 	<Layout headline="CONTACT US">
 		<Contact />
 	</Layout>
-
-
 </html>
