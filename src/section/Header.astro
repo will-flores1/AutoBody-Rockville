@@ -1,62 +1,176 @@
 ---
-
+import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 ---
 
-<header class="w-full">
-  <div class="p-1 h-20 bg-orange-500 flex flex-col text-center justify-center items-center md:hidden"><a class="px-20 py-4 text-xl font-bold text-slate-50" href="tel:0000000000">&#128222; (000) 000-0000<p class="text-base font-normal">Click to call</p></a></div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus" class="w-full h-24 md:h-40" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<div class="bg-slate-50 py-3 text-center">
-  <a href="https://maps.google.com/?q=1621+E+Gude+Dr+Rockville+MD+20850" class="text-slate-900 text-center bg-slate-50 py-1 px-28 md:py-3 md:px-80">Click to open map</a>
-</div>
-  <nav class="bg-blue-500 px-8 py-2">
-      <div class="text-white max-w-screen-xl m-auto text-center">
-          <ul class="flex  justify-evenly">
-              <li class="flex-grow py-2 cursor-pointer"><a href="/">Home</a></li>
-              <li class="flex-grow py-2 cursor-pointer">
-                <button id="menu" type="button" aria-controls="menu">Services</button>
-                <div id="submenu" hidden>
-                  <ul>
-                    <li class="submenu_items"><a href="/hello">Auto Body Repair</a></li>
-                    <li class="submenu_items"><a href="/hello">Paint Correction</a></li>
-                    <li class="submenu_items"><a href="/hello">Dent Repair</a></li>
-                    <li class="submenu_items"><a href="/hello">Frame Repair</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="flex-grow py-2 cursor-pointer"><a href="/aboutus">About us</a></li>
-              <li class="flex-grow py-2 cursor-pointer hidden md:block"><a href="/contactus">Contact us</a></li>
-          </ul>
-      </div>
-  </nav>
+<header>
+	<div class="call_button_wrapper">
+		<a class="call_button_link" href={"tel:" + { PHONE_NUMBER }}
+			>&#128222; {PHONE_NUMBER_FORMATTED}<p class="call_button_subtext">
+				Click to call
+			</p></a
+		>
+	</div>
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus"
+		class="google_maps_embed"
+		allowfullscreen=""
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div class="google_maps_text_link_wrapper">
+		<a
+			href="https://maps.google.com/?q=1621+E+Gude+Dr+Rockville+MD+20850"
+			class="google_maps_text_link">Click to open map</a
+		>
+	</div>
+	<nav class="nav_wrapper">
+		<div class="nav_links_wrapper">
+			<ul class="nav_ul_group">
+				<li class="nav_li_group"><a href="/">Home</a></li>
+				<li class="nav_li_group">
+					<a href="/services" id="menu" aria-controls="menu">Services</a>
+					<div id="submenu" hidden>
+						<ul>
+							<li class="submenu_items">
+								<a href="/hello">Auto Body Repair</a>
+							</li>
+							<li class="submenu_items">
+								<a href="/hello">Paint Correction</a>
+							</li>
+							<li class="submenu_items"><a href="/hello">Dent Repair</a></li>
+							<li class="submenu_items"><a href="/hello">Frame Repair</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav_li_group">
+					<a href="/aboutus">About us</a>
+				</li>
+				<li class="nav_li_group contact">
+					<a href="/contactus">Contact us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<script defer>
+		// const btn = document.getElementById("menu");
+		// if (btn) {
+		// 	btn.addEventListener("hover", function () {
+		// 		let value = document
+		// 			.getElementById("menu")
+		// 			.getAttribute("aria-expanded");
+		// 		let content = document.getElementById("submenu");
+		// 		if (value === "true") {
+		// 			btn.setAttribute("aria-expanded", "false");
+		// 			content.setAttribute("hidden", "");
+		// 		} else {
+		// 			btn.setAttribute("aria-expanded", "true");
+		// 			content.removeAttribute("hidden");
+		// 		}
+		// 	});
+		// }
+	</script>
+
+	<style>
+		.nav_wrapper {
+			background-color: rgb(59 130 246);
+			padding: 0.75rem 0.5rem;
+		}
+
+		.nav_links_wrapper {
+			color: white;
+			max-width: 100%;
+			text-align: center;
+			margin: auto;
+		}
+
+		.nav_ul_group {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.nav_li_group {
+			flex-grow: 1;
+			padding: 0.5rem 0;
+			cursor: pointer;
+		}
+
+		.call_button_wrapper {
+			padding: 2.8rem 0;
+			height: 5rem /* 80px */;
+			background-color: rgb(249 115 22);
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+		.call_button_link {
+			padding: 1rem 5rem;
+			font-size: 1.25rem /* 20px */;
+			line-height: 1.75rem /* 28px */;
+			font-weight: 400;
+			color: white;
+		}
+		.call_button_subtext {
+			font-size: 1.6rem /* 16px */;
+			line-height: 1.5rem /* 24px */;
+			font-weight: 900;
+		}
+
+		#menu {
+			position: relative;
+		}
+		/* #submenu {
+			position: relative;
+			flex-grow: 1;
+			top: 18px;
+		} */
+		/* 
+		.submenu_items {
+			padding: 1rem 0;
+			border-width: 2px;
+			background-color: rgb(248 250 252);
+			color: rgb(15 23 42);
+		} */
+
+		.google_maps_embed {
+			width: 100%;
+			height: 7rem;
+		}
+		.google_maps_text_link_wrapper {
+			height: 3rem;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.google_maps_text_link {
+			color: rgb(15 23 42);
+			text-align: center;
+			background-color: rgb(248 250 252);
+			padding: 0.25rem 7rem;
+		}
+		.contact {
+			display: none;
+		}
+
+		@media (min-width: 768px) {
+			.call_button_wrapper {
+				display: none;
+			}
+
+			.google_maps_embed {
+				height: 10rem /* 160px */;
+			}
+
+			.google_maps_text_link {
+				/* width: 20rem; */
+				padding: 0.75rem 15rem;
+			}
+
+			.contact {
+				display: block;
+			}
+		}
+	</style>
 </header>
-
-<script defer>
-  const btn = document.getElementById('menu');
-  if (btn) {
-    btn.addEventListener('click', function() {
-      let value = document.getElementById("menu").getAttribute("aria-expanded");
-      let content = document.getElementById("submenu");
-      console.log('hel')
-      if (value === "true") {
-        btn.setAttribute("aria-expanded", "false");
-        content.setAttribute("hidden", "");
-      } else {
-        btn.setAttribute("aria-expanded", "true");
-        content.removeAttribute("hidden");
-      }
-    });
-  }
-</script>
-
-<style>
-  #menu {
-    @apply relative
-  }
-  #submenu {
-    @apply relative flex-grow top-5 mb-1
-  }
-
-  .submenu_items {
-    @apply py-8 border-2 bg-slate-50 text-slate-900
-  }
-</style>

@@ -1,27 +1,79 @@
 ---
 import CallButton from "../components/CallButton.astro";
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
 ---
 
-<div class="text-left bg-slate-50 text-gray-900 mt-4 p-2 rounded-md px-8">
- <h1 class="font-bold text-6xl text-center text-orange-500 m-8">If you need...</h1>  
- <ul>
-  <li class="list_text"><img src="/assets/gear.svg" alt="gear" class="w-24"/>Collision Repairs: If a vehicle is involved in an accident, it may require repairs to the body, frame, and/or mechanical systems. Our auto body shop can repair any damage to the vehicle and restore it to its pre-accident condition.</li>
-  <li class="list_text"><img src="/assets/gear.svg"  alt="gear" class="w-24"/>Paintless Dent Repair: Minor dents and dings can often be repaired without the need for repainting, using specialized tools and techniques.</li>
-  <li class="list_text"><img src="/assets/gear.svg" alt="gear" class="w-24"/>Painting and Refinishing: If a vehicle's paint is damaged, faded, or scratched, an auto body shop can repaint and refinish the vehicle to give it a new and refreshed look.</li>
-  <li class="list_text"><img src="/assets/gear.svg"  alt="gear" class="w-24"/>Rust Repair: If a vehicle has rust on the body, an auto body shop can repair the rust, and prevent it from spreading further.</li>
-  <li class="list_text"><img src="/assets/gear.svg"  alt="gear"  class="w-24"/>Glass Replacement: Auto body shop can replace any broken or cracked glass on the vehicle, including windshields, windows, and mirrors.</li>
-  <li class="list_text"><img src="/assets/gear.svg"  alt="gear"  class="w-24"/>Detailing: Many auto body shops also offer detailing services to clean and protect the exterior and interior of the vehicle.</li>
-  <li class="list_text"><img src="/assets/gear.svg"  alt="gear" class="w-24"/>Custom Work: Some auto body shop also do custom work to enhance the look of the vehicle or for some specific need like a lift kit for off-road vehicles.</li>
- </ul>
- <h1 class="font-bold text-5xl text-center text-orange-500 mt-8 mb-2">Call us:</h1> 
-  <div class="text-slate-50 text-center pb-12">
-    <CallButton />
-  </div>
+<div class="cta_section_wrapper">
+	<h1 class="cta_headline">If you need...</h1>
+	<ul>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Collision
+			Repairs: If a vehicle is involved in an accident, it may require repairs
+			to the body, frame, and/or mechanical systems. Our auto body shop can
+			repair any damage to the vehicle and restore it to its pre-accident
+			condition.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Paintless Dent
+			Repair: Minor dents and dings can often be repaired without the need for
+			repainting, using specialized tools and techniques.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Painting and
+			Refinishing: If a vehicle's paint is damaged, faded, or scratched, an auto
+			body shop can repaint and refinish the vehicle to give it a new and
+			refreshed look.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Rust Repair: If
+			a vehicle has rust on the body, an auto body shop can repair the rust, and
+			prevent it from spreading further.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Glass
+			Replacement: Auto body shop can replace any broken or cracked glass on the
+			vehicle, including windshields, windows, and mirrors.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Detailing: Many
+			auto body shops also offer detailing services to clean and protect the
+			exterior and interior of the vehicle.
+		</li>
+		<li class="list_text">
+			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Custom Work:
+			Some auto body shop also do custom work to enhance the look of the vehicle
+			or for some specific need like a lift kit for off-road vehicles.
+		</li>
+	</ul>
+	<h1 class="cta_headline">Call us:</h1>
+	<div class="call_button_wrapper">
+		<CallButton />
+	</div>
 </div>
 
 <style>
-  .list_text {
-    @apply text-2xl md:text-xl mb-2 font-bold
-  }
+	.cta_section_wrapper {
+		color: black;
+		text-align: left;
+		background-color: rgb(248 250 252);
+	}
+	.cta_headline {
+		text-decoration: underline;
+		text-decoration-color: rgb(249 115 22);
+		font-weight: 700;
+		font-size: 3.75rem /* 60px */;
+		text-align: center;
+		color: rgb(249 115 22);
+	}
+	.call_button_wrapper {
+		text-align: center;
+		color: white;
+	}
+	.list_text {
+		@apply text-2xl md:text-xl mb-2 font-bold;
+	}
+
+	.gear_icon {
+		width: 4rem;
+	}
 </style>

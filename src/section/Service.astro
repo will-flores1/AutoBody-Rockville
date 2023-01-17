@@ -19,7 +19,7 @@ import check from "/assets/check.svg";
 			For when you need a car repair service in Rockville, MD. Call our Auto
 			Body and Repair for prompt and courteous service:
 		</p>
-		<ul class="mb-8 text-left">
+		<ul>
 			<li class="list_items">
 				<img src={check} alt="check" class="icon" />
 				Collision Repair
@@ -31,8 +31,8 @@ import check from "/assets/check.svg";
 				<img src={check} alt="check" class="icon" />Paint matching
 			</li>
 		</ul>
-		<CallButton />
 	</div>
+	<CallButton />
 	<p class="service_para">
 		We provide accident repair, rust repair, detailing and car washing, Scratch
 		and chip repair, Paint matching and touch-ups.
@@ -51,11 +51,9 @@ import check from "/assets/check.svg";
 <style>
 	.service_wrapper {
 		text-align: left;
-		color: rgb(248 250 252 / 0.75);
 		margin-top: 0.5rem;
 		border-radius: 0.375rem;
 		background-color: rgb(0 0 0 / 0.75);
-		padding: 0 2rem;
 	}
 
 	.service_headline {
@@ -77,13 +75,6 @@ import check from "/assets/check.svg";
 	}
 
 	.service_para {
-		font-size: 1.25rem /* 20px */;
-		line-height: 2.25rem /* 36px */;
-		margin: 0rem 0;
-		padding: 1rem 0;
-	}
-	.cta {
-		padding: 2rem 0;
 	}
 
 	.icon {

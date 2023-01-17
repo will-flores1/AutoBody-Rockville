@@ -6,23 +6,34 @@ import CTA from "../section/CTA.astro";
 import Info from "../section/Info.astro";
 import Contact from "../section/Contact.astro";
 import Service from "../section/Service.astro";
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../const.js";
 ---
 
-<Layout title="Auto Body Service Rockville">
-	<main class="main_wrapper">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<title>{SITE_TITLE}</title>
+	</head>
+	<Layout
+		page_title="Auto Body Service Rockville"
+		headline="CAR BODY SHOP IN ROCKVILLE"
+	>
 		<Hero />
 		<Service />
 		<CTA />
 		<Info />
 		<Contact />
-	</main>
-</Layout>
+	</Layout>
 
-<style>
-	@media (min-width: 768px) {
-		.main_wrapper {
-			padding-left: 2rem /* 32px */;
-			padding-right: 2rem /* 32px */;
+
+	<style>
+		@media (min-width: 768px) {
+			.main_wrapper {
+				padding-left: 2rem /* 32px */;
+				padding-right: 2rem /* 32px */;
+			}
 		}
-	}
-</style>
+	</style>
+</html>

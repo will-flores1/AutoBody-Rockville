@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BaseHead from "../components/BaseHead.astro";
+import {
+	LOCATION,
+	LOCATION_STATE,
+	PHONE_NUMBER,
+	PHONE_NUMBER_FORMATTED,
+	ABOUT_US_PAGE,
+} from "../const.js";
+
+const { title, description } = ABOUT_US_PAGE;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<title>{title}</title>
+	</head>
+	<Layout page_title="About Us" headline="About Us.">
+		<p>
+			We are a local Auto Body referral service in {LOCATION}, {LOCATION_STATE}.
+		</p>
+		<p>Serving all of {LOCATION} and surrounded areas.</p>
+		<p>If you need auto body help we are here to help you.</p>
+		<h2>Need a Auto Body quote?</h2>
+		<h2>
+			Call: <a href={"tel:" + { PHONE_NUMBER }} style="color:#f77316 ;"
+				>{PHONE_NUMBER_FORMATTED}</a
+			>
+		</h2>
+	</Layout>
+
+	<style>
+		h2 {
+			font-size: 1.3rem;
+		}
+		p {
+			padding: 0.5rem 0;
+		}
+	</style>
+</html>

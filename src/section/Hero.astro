@@ -2,12 +2,38 @@
 import CallButton from "../components/CallButton.astro";
 ---
 
-<div class="text-center bg-black/80 text-slate-50 px-2 pb-16 mb-4">
-	<h1 class="text-6xl pt-6 font-extrabold md:mt-4 md:text-8xl lg:text-9xl">
-		Auto Body Service Rockville
-	</h1>
-	<p class="pb-4 text-xl mb-4 md:text-4xl lg:text-5xl">Free Estimates</p>
-	<CallButton />
+<div class="hero_wrapper">
+	<p class="hero_subheading">Free Estimates</p>
+	<div class="call_button_wrapper">
+		<CallButton />
+	</div>
 </div>
 
-<style></style>
+<style>
+	.hero_wrapper {
+		text-align: center;
+	}
+
+	.hero_subheading {
+		font-size: 1.25rem /* 20px */;
+	}
+	@media (min-width: 768px) {
+		.hero_headline {
+			font-size: 6rem /* 96px */;
+			line-height: 1;
+		}
+	}
+	@media (min-width: 1024px) {
+		.hero_headline {
+			font-size: 8rem /* 128px */;
+			line-height: 1;
+			font-size: 7rem /* 36px */;
+			line-height: 7rem /* 40px */;
+		}
+
+		.hero_subheading {
+			font-size: 3rem /* 48px */;
+			line-height: 1;
+		}
+	}
+</style>
