@@ -1,9 +1,7 @@
 ---
 import Header from "../section/Header.astro";
-import { Image } from "@astrojs/image/components";
-import backgroundimage from "/public/assets/bgImg.jpeg";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../const.js";
-import BaseHead from "../components/BaseHead.astro";
+// import { Image } from "@astrojs/image/components";
+// import backgroundimage from "/assets/bgImg.jpeg";
 export interface Props {
 	headline: string;
 }
@@ -14,7 +12,7 @@ const { headline } = Astro.props;
 <body>
 	<Header />
 	<img
-		src={backgroundimage}
+		src="/assets/bgImg.jpeg"
 		width={1800}
 		height={2000}
 		class="background_image"
