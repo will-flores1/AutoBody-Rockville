@@ -11,10 +11,8 @@ import Layout from "../layouts/Layout.astro";
 	</head>
 	<Layout headline="404 Page">
 		<div class="error_wrapper">
-			<p class="text-3xl font-semibold text-white">
-				Sorry, we couldn't find this page.
-			</p>
-			<p class="mt-4 mb-8 text-lg text-white">
+			<p class="sorry">Sorry, we couldn't find this page.</p>
+			<p class="dont_worry">
 				But dont worry, you can find plenty of other things on our homepage.
 			</p>
 			<a rel="noopener noreferrer" href="/">Back to homepage</a>
@@ -34,6 +32,21 @@ import Layout from "../layouts/Layout.astro";
 			margin: 1rem 0;
 			background-color: white;
 			box-shadow: inset 0 0 5px #000000;
+		}
+
+		.sorry {
+			font-size: 1.875rem /* 30px */;
+			line-height: 2.25rem /* 36px */;
+			font-weight: 600;
+			color: white;
+		}
+
+		.dont_worry {
+			margin-top: 1rem /* 16px */;
+			margin-bottom: 2rem /* 32px */;
+			font-size: 1.125rem /* 18px */;
+			line-height: 1.75rem /* 28px */;
+			color: white;
 		}
 	</style>
 </html>

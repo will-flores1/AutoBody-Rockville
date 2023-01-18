@@ -7,7 +7,7 @@ export const GOOGLE_MAPS_ADDRESS =
 export const LOCATION = "Rockville";
 export const LOCATION_STATE = "MD";
 export const PHONE_NUMBER = "0000000000";
-export const PHONE_NUMBER_FORMATTED = "(000) 000-0000";
+export const PHONE_NUMBER_FORMATTED = "(301) 000-0000";
 
 export const SITE_TITLE = `Auto Body ${LOCATION}. Paint, Dent, Collision Repair`; // 500
 export const SITE_DESCRIPTION = `Auto Body Shop in ${LOCATION}, ${LOCATION_STATE}. Call ${PHONE_NUMBER_FORMATTED}. Paint Repair, Collision Repair, Dent Removal, Fender Repair, Bumper Repair, and Scratch Repair.`; // 149

@@ -1,14 +1,9 @@
 ---
 import Layout from "./Layout.astro";
-export interface Props {
-	pageTitle: string;
-	postTitle: string;
-}
 
-const { pageTitle, postTitle } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
-<Layout title={pageTitle}>
-	<h1>{postTitle}</h1>
+<Layout headline={frontmatter.category}>
 	<slot />
 </Layout>
