@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { FAQ_PAGE } from "../const.js";
+import UnderConstruction from "../components/UnderConstruction.astro";
 
 const { FAQ_PAGES } = FAQ_PAGE;
 ---
@@ -25,8 +26,9 @@ const { FAQ_PAGES } = FAQ_PAGE;
 			))
 		}
 	</div>
-	<div style="text-align: center; font-size: 2rem;">🚧 Under Construction</div>
+	<UnderConstruction />
 </Layout>
+
 <style>
 	.questions_wrapper {
 		padding-top: 1rem;
