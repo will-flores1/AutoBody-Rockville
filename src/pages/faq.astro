@@ -17,7 +17,9 @@ const { FAQ_PAGES } = FAQ_PAGE;
 					<h1>
 						{item.question}
 						<span style="color: orange;">&#8611;</span>
-						<p class="preview_text">{item.answer.slice(0, 50)}...</p>
+						<p class="preview_text">
+							{item.answer.slice(0, 50)}... <span>read more</span>
+						</p>
 					</h1>
 				</a>
 			))
@@ -30,14 +32,19 @@ const { FAQ_PAGES } = FAQ_PAGE;
 		padding-top: 1rem;
 	}
 
-	h1 {
+	.item_link > h1 {
 		background-color: #3c4043a4;
 		padding: 0.75rem;
 		border-radius: 4px;
+		line-height: 0.88;
 	}
 
-	h1:hover {
+	.item_link > h1:hover {
 		background-color: #3c4043;
+	}
+
+	.item_link > h1:hover > p > span {
+		text-decoration: underline;
 	}
 	.item_link {
 		color: white;
@@ -55,5 +62,17 @@ const { FAQ_PAGES } = FAQ_PAGE;
 		text-decoration: none;
 		font-size: 1rem;
 		font-weight: 400;
+		line-height: 0.9;
+		text-transform: lowercase;
+	}
+
+	@media (min-width: 768px) {
+		.item_link > h1 {
+			font-size: 3rem;
+		}
+		.preview_text {
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
 	}
 </style>
