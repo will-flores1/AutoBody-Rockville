@@ -4,28 +4,49 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 
 <button class="button_class"
 	><a href={"tel:" + { PHONE_NUMBER }} class="button_link"
-		>&#128222; {PHONE_NUMBER_FORMATTED}</a
-	>
-	<p>Click to call</p></button
->
+		>&#128222; {PHONE_NUMBER_FORMATTED}
+	</a>
+	<p>CLICK TO CALL</p>
+</button>
 
 <style>
 	button {
-		height: fit-content;
-		width: fit-content;
+		/* display: inline-block; */
+		border: none;
+		margin: 0;
+		padding: 0;
 		margin: 1.5rem 0;
+		color: white;
+		cursor: pointer;
 	}
 	.button_link {
+		width: 15rem;
+		color: white;
+		text-decoration: none;
 		background-color: rgb(255, 106, 0);
-		font-size: 1.6rem /* 24px */;
-		line-height: 2rem /* 32px */;
-		padding: 1.5rem 1rem;
-		font-weight: 700;
+		font-size: 1.4rem /* 24px */;
+		padding: 1.3rem 2.2rem;
+		font-weight: 500;
 		border-radius: 0.25rem;
-		padding-bottom: 3rem;
+		padding-bottom: 2.8rem;
 		text-shadow: 1px 3px 8px black;
+	}
+	p {
+		margin: 0;
+		font-weight: 800;
+		font-size: 1.2rem;
+		padding-top: 0.1rem;
 	}
 
 	@media (min-width: 768px) {
+		.button_link {
+			font-size: 2rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.button_link {
+			font-size: 2.5rem;
+		}
 	}
 </style>

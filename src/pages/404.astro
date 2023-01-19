@@ -9,7 +9,7 @@ import Layout from "../layouts/Layout.astro";
 		<BaseHead title="404 Page" description="404 Page Not Found Return Home" />
 		<title>404 Page</title>
 	</head>
-	<Layout headline="404 Page">
+	<Layout headline="404 Page" title="404" description="Page Not Found">
 		<div class="error_wrapper">
 			<p class="sorry">Sorry, we couldn't find this page.</p>
 			<p class="dont_worry">
@@ -21,7 +21,7 @@ import Layout from "../layouts/Layout.astro";
 
 	<style>
 		.error_wrapper {
-			background-color: rgba(0, 0, 0, 0.859);
+			/* background-color: rgba(0, 0, 0, 0.859); */
 			padding: 1rem;
 			padding-bottom: 4rem;
 		}

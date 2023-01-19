@@ -1,51 +1,22 @@
 ---
 import CallButton from "../components/CallButton.astro";
 import { Image } from "@astrojs/image/components";
+import { IF_YOU_NEED_CTA } from "../const.js";
 ---
 
 <div class="cta_section_wrapper">
 	<h1 class="cta_headline">If you need...</h1>
 	<ul>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Collision
-			Repairs: If a vehicle is involved in an accident, it may require repairs
-			to the body, frame, and/or mechanical systems. Our auto body shop can
-			repair any damage to the vehicle and restore it to its pre-accident
-			condition.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Paintless Dent
-			Repair: Minor dents and dings can often be repaired without the need for
-			repainting, using specialized tools and techniques.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Painting and
-			Refinishing: If a vehicle's paint is damaged, faded, or scratched, an auto
-			body shop can repaint and refinish the vehicle to give it a new and
-			refreshed look.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Rust Repair: If
-			a vehicle has rust on the body, an auto body shop can repair the rust, and
-			prevent it from spreading further.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Glass
-			Replacement: Auto body shop can replace any broken or cracked glass on the
-			vehicle, including windshields, windows, and mirrors.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Detailing: Many
-			auto body shops also offer detailing services to clean and protect the
-			exterior and interior of the vehicle.
-		</li>
-		<li class="list_text">
-			<img src="/assets/gear.svg" alt="gear" class="gear_icon" />Custom Work:
-			Some auto body shop also do custom work to enhance the look of the vehicle
-			or for some specific need like a lift kit for off-road vehicles.
-		</li>
+		{
+			IF_YOU_NEED_CTA.map((item) => (
+				<li class="list_item">
+					<img src={item.icon} alt="gear" class="list_item_icon" />
+					<h2 class="list_item_para">{item.title}</h2>
+				</li>
+			))
+		}
 	</ul>
-	<h1 class="cta_headline">Call us:</h1>
+	<h2 style="text-align: center; margin: 0; letter-spacing: 2px;">Call us</h2>
 	<div class="call_button_wrapper">
 		<CallButton />
 	</div>
@@ -53,7 +24,7 @@ import { Image } from "@astrojs/image/components";
 
 <style>
 	.cta_section_wrapper {
-		color: black;
+		color: rgb(45, 45, 45);
 		text-align: left;
 		background-color: rgb(248 250 252);
 	}
@@ -61,19 +32,26 @@ import { Image } from "@astrojs/image/components";
 		text-decoration: underline;
 		text-decoration-color: rgb(249 115 22);
 		font-weight: 700;
-		font-size: 3.75rem /* 60px */;
+		font-size: 3rem /* 60px */;
 		text-align: center;
 		color: rgb(249 115 22);
+		margin: 0;
+		padding: 1rem 0;
+	}
+
+	.cta_section_wrapper > ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 	}
 	.call_button_wrapper {
 		text-align: center;
-		color: white;
-	}
-	.list_text {
-		@apply text-2xl md:text-xl mb-2 font-bold;
 	}
 
-	.gear_icon {
+	.list_item_icon {
 		width: 4rem;
+	}
+	.list_item {
+		display: flex;
 	}
 </style>

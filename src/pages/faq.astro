@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { FAQ_PAGE } from "../const.js";
+
+console.log(FAQ_PAGE.FAQ_PAGES);
+const { FAQ_PAGES } = FAQ_PAGE;
+---
+
+<Layout
+	headline={FAQ_PAGE.headline}
+	title={FAQ_PAGE.title}
+	description={FAQ_PAGE.description}
+>
+	<div class="questions_wrapper">
+		{
+			FAQ_PAGES.map((item) => (
+				<a href={item.pathname} class="item_link">
+					<h1>
+						{item.question}
+						<span style="color: orange;">&#8611;</span>
+						<p class="preview_text">{item.answer.slice(0, 50)}...</p>
+					</h1>
+				</a>
+			))
+		}
+	</div>
+	<div style="text-align: center; font-size: 2rem;">🚧 Under Construction</div>
+</Layout>
+<style>
+	.questions_wrapper {
+		padding-top: 1rem;
+	}
+
+	h1 {
+		background-color: #3c4043a4;
+		padding: 0.75rem;
+		border-radius: 4px;
+	}
+
+	h1:hover {
+		background-color: #3c4043;
+	}
+
+	.item_link:visited {
+		text-decoration: none;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+	}
+	.preview_text {
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+</style>

@@ -4,7 +4,7 @@ import { Image } from "@astrojs/image/components";
 ---
 
 <div class="info_wrapper">
-	<h1 class="info_headline">Car Accidents</h1>
+	<h2 class="info_headline">Car Accidents</h2>
 	<img
 		src="/assets/traffic.jpg"
 		alt="cars in traffic"
@@ -12,63 +12,15 @@ import { Image } from "@astrojs/image/components";
 		width={420}
 		class="info_banner"
 	/>
-	<p class="info_para">
-		Car accidents can happen to anyone, at any time. They can be stressful and
-		overwhelming, but it's important to know what steps to take in the
-		aftermath. Here are some important things to keep in mind after a car
-		accident:
+	<p>
+		Car accidents can happen to anyone, at any time. It can be overwhelming to
+		deal with the aftermath of a car accident. That's where we step in. We'll
+		make sure your vehicle is repaired so you can get back on the road safely.
 	</p>
-	<ul>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Check for
-			injuries: The safety and well-being of everyone involved should be the
-			first priority. Call for emergency medical services if necessary.
-		</li>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Call the police:
-			Even if the accident seems minor, it's important to call the police and
-			file a report. This report will be necessary for insurance purposes.
-		</li>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Exchange
-			information: Obtain the contact and insurance information from the other
-			driver(s) involved in the accident. Make sure to also take note of the
-			make, model, and license plate number of the other vehicles.
-		</li>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Take photos: If
-			possible, take photos of the damage to all vehicles involved, as well as
-			any skid marks or other relevant details of the accident scene.
-		</li>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Contact your
-			insurance company: As soon as possible, notify your insurance company of
-			the accident and provide them with the details and any documentation they
-			may require.
-		</li>
-		<li class="list_text">
-			<img src="/assets/check.svg" alt="check" class="w-24" />Visit an auto body
-			shop: If your vehicle has sustained any damage, it's important to take it
-			to a reputable auto body shop for repairs as soon as possible.
-		</li>
-	</ul>
-	<p class="info_para">
-		It can be overwhelming to deal with the aftermath of a car accident, but by
-		following these steps and seeking professional help, you can ensure that
-		your vehicle is repaired and you can get back on the road safely.
-	</p>
-	<p class="info_para">
-		Never Drink and Drive! Never Text and Drive! Never! 1/3 of vehicle crashes
-		in the USA per year are caused by alcohol-related accidents and texting
-		which result in fatalities. No person should ever get into a vehicle to
-		drive it when they have been drinking. Discuss the seriousness of this topic
-		with your friends, family and your children.
-	</p>
-	<p class="info_para">
-		Always use patience when driving - Don't be a rude driver! Patience saves
-		lives. Safety is of utmost importance on our roadways at all times.
-		Attention and courtesy will go a long way to make our roadways safer and
-		more enjoyable.
+	<p>
+		Always use patience when driving. Patience saves lives. Safety is of utmost
+		importance on our roadways at all times. Attention and courtesy will go a
+		long way to make our roadways safer and more enjoyable.
 	</p>
 </div>
 
@@ -76,25 +28,30 @@ import { Image } from "@astrojs/image/components";
 	.info_wrapper {
 		background-color: rgb(248, 250, 252);
 		color: rgb(17 24 39);
+		padding-bottom: 0.5rem;
 	}
 
 	.info_headline {
-		font-size: 3.75rem /* 60px */;
-		line-height: 1;
 		font-weight: 700;
-		padding: 2rem 0;
+		padding: 1rem 0 0 0;
+		text-align: center;
+		margin: 0;
+		font-size: 2rem;
 	}
+
+	.info_wrapper > ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.info_item {
+	}
+
 	.list_text {
-		@apply text-2xl mb-2 font-bold;
+		font-size: 1.1rem;
+		font-weight: 500;
+		line-height: 1.4;
 	}
-
-	.info_para {
-		font-size: 1.25rem /* 20px */;
-		line-height: 2.25rem /* 36px */;
-		margin: 0rem 0;
-		padding: 1rem 0;
-	}
-
 	.info_banner {
 		height: 9rem /* 144px */;
 		object-fit: cover;

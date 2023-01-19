@@ -3,32 +3,32 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 ---
 
 <header>
-	<div class="call_button_wrapper">
-		<a class="call_button_link" href={"tel:" + { PHONE_NUMBER }}
-			>&#128222; {PHONE_NUMBER_FORMATTED}<p class="call_button_subtext">
-				Click to call
-			</p></a
-		>
-	</div>
+	<button class="button_class"
+		><a href={"tel:" + { PHONE_NUMBER }} class="button_link"
+			>&#128222; {PHONE_NUMBER_FORMATTED}
+		</a>
+		<p>CLICK TO CALL</p>
+	</button>
 	<iframe
 		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus"
 		class="google_maps_embed"
 		allowfullscreen=""
 		loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<div class="google_maps_text_link_wrapper">
+	<button class="google_maps_text_link_wrapper">
 		<a
 			href="https://maps.google.com/?q=1621+E+Gude+Dr+Rockville+MD+20850"
 			class="google_maps_text_link">Click to open map</a
 		>
-	</div>
+	</button>
 	<nav class="nav_wrapper">
-		<div class="nav_links_wrapper">
-			<ul class="nav_ul_group">
-				<li class="nav_li_group"><a href="/">Home</a></li>
-				<li class="nav_li_group">
-					<a href="/services">Services</a>
-					<!-- <div id="submenu" hidden>
+		<ul class="nav_ul_group">
+			<li class="nav_li_item">
+				<a href="/">Home</a>
+			</li>
+			<li class="nav_li_item">
+				<a href="/services">Services</a>
+				<!-- <div id="submenu" hidden>
 						<ul>
 							<li class="submenu_items">
 								<a href="/hello">Auto Body Repair</a>
@@ -40,15 +40,14 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 							<li class="submenu_items"><a href="/hello">Frame Repair</a></li>
 						</ul>
 					</div> -->
-				</li>
-				<li class="nav_li_group aboutus">
-					<a href="/aboutus">About us</a>
-				</li>
-				<li class="nav_li_group">
-					<a href="/contactus">Contact us</a>
-				</li>
-			</ul>
-		</div>
+			</li>
+			<li class="nav_li_item">
+				<a href="/faq">FAQ</a>
+			</li>
+			<li class="nav_li_item hidden">
+				<a href="/contactus">Contact us</a>
+			</li>
+		</ul>
 	</nav>
 
 	<script defer></script>
@@ -56,52 +55,68 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 	<style>
 		.nav_wrapper {
 			background-color: rgb(59 130 246);
-			padding: 0.75rem 0.5rem;
+			margin: 0;
 		}
-
-		.nav_links_wrapper {
+		.button_class {
+			background-color: rgb(255, 106, 0);
+			width: 100vw;
+			border: none;
+			appearance: none;
+			margin: 0;
+			padding: 0;
 			color: white;
-			max-width: 100%;
-			text-align: center;
-			margin: auto;
+			cursor: pointer;
+		}
+		.button_link {
+			color: white;
+			text-decoration: none;
+			background-color: rgb(255, 106, 0);
+			font-size: 2rem /* 24px */;
+			padding: 0.2rem 15vw;
+			font-weight: 500;
+			padding-bottom: 1.7rem;
+			text-shadow: 1px 3px 8px black;
+		}
+		p {
+			margin: 0;
+			font-weight: 800;
+			font-size: 1.2rem;
+			padding-top: 0.1rem;
 		}
 
 		.nav_ul_group {
 			display: flex;
-			justify-content: space-evenly;
-		}
-		.nav_li_group {
-			flex-grow: 1;
-			padding: 0.5rem 0;
-			cursor: pointer;
-		}
-
-		.call_button_wrapper {
-			padding: 2.8rem 0;
-			height: 5rem /* 80px */;
-			background-color: rgb(249 115 22);
-			display: flex;
-			flex-direction: column;
+			justify-content: space-between;
+			padding: 0;
+			margin: 0;
+			height: 2.5rem;
+			list-style: none;
 			text-align: center;
-			justify-content: center;
-			align-items: center;
 		}
-		.call_button_link {
-			padding: 1rem 5rem;
-			font-size: 1.25rem /* 20px */;
-			line-height: 1.75rem /* 28px */;
-			font-weight: 400;
+		.nav_li_item {
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7);
+		}
+		.nav_li_item:active {
+			box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.7);
+		}
+		.nav_li_item > a {
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 0.8rem 8vw;
+		}
+		.nav_li_item > a:visited {
+			list-decoration: none;
 			color: white;
 		}
-		.call_button_subtext {
-			font-size: 1.6rem /* 16px */;
-			line-height: 1.5rem /* 24px */;
-			font-weight: 900;
-		}
 
-		#menu {
+		/* #menu {
 			position: relative;
-		}
+		} */
 		/* #submenu {
 			position: relative;
 			flex-grow: 1;
@@ -120,38 +135,56 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 			height: 7rem;
 		}
 		.google_maps_text_link_wrapper {
-			height: 3rem;
+			background-color: rgb(255, 106, 0);
 			width: 100vw;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			border: none;
+			appearance: none;
+			margin: 0;
+			padding: 0;
+			color: white;
+			cursor: pointer;
+			height: 2rem;
 		}
 
 		.google_maps_text_link {
-			color: rgb(15 23 42);
-			text-align: center;
-			background-color: rgb(248 250 252);
-			padding: 0.25rem 7rem;
+			color: rgb(255, 255, 255);
+			text-decoration: none;
+			background-color: rgb(255, 106, 0);
+			font-size: 1rem /* 24px */;
+			padding: 0.33rem 32vw;
+			font-weight: 500;
 		}
-		.aboutus {
+		.hidden {
 			display: none;
 		}
 
 		@media (min-width: 768px) {
-			.call_button_wrapper {
+			.button_class {
 				display: none;
+				padding: 1.8rem 30vw;
 			}
-
-			.google_maps_embed {
-				height: 10rem /* 160px */;
+			.button .google_maps_embed {
+				height: 10rem 160px;
 			}
-
+			.nav_ul_group {
+				height: 3.5rem;
+			}
+			.nav_li_item {
+				padding: 18px 0;
+			}
+			.nav_li_item > a {
+				font-size: 1.1rem;
+				padding: 1.2rem 8.1vw;
+			}
+			.google_maps_text_link_wrapper {
+				height: 3rem;
+			}
 			.google_maps_text_link {
 				/* width: 20rem; */
-				padding: 0.75rem 15rem;
+				padding: 0.9rem 40vw;
 			}
 
-			.aboutus {
+			.hidden {
 				display: block;
 			}
 		}

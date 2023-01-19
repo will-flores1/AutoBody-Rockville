@@ -1,10 +1,9 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
 import Layout from "../layouts/Layout.astro";
 import PostLayout from "../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-	const posts = await Astro.glob("../posts/*.md");
+	const posts = await Astro.glob("../faq/*.md");
 	return posts.map((post) => {
 		return {
 			params: { slug: post.frontmatter.slug },
@@ -13,14 +12,14 @@ export async function getStaticPaths() {
 	});
 }
 const { frontmatter, Content } = Astro.props;
-console.log(frontmatter);
+// console.log(frontmatter);
 ---
 
-<head>
-	<BaseHead title="hello world" description={frontmatter.description} />
-	<title>{frontmatter.title}</title>
-</head>
-<Layout headline={frontmatter.category}>
+<PostLayout
+	headline={frontmatter.title}
+	title={frontmatter.title}
+	description={frontmatter.description}
+>
 	<Content />
-</Layout>
+</PostLayout>
 <!-- {astro.html} -->

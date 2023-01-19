@@ -32,36 +32,36 @@ import {
 			>
 		</div>
 	</div>
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus"
+		class="google_maps_embed"
+		allowfullscreen=""
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<iframe
-	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus"
-	class="google_maps_embed"
-	allowfullscreen=""
-	loading="lazy"
-	referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <style>
 	.contact_wrapper {
 		text-align: left;
-		background-color: rgb(0 0 0 / 0.75);
 		border-radius: 0.375rem /* 6px */;
 		font-size: 1.125rem /* 18px */;
-		line-height: 1.75rem /* 28px */;
+		padding: 1rem 0;
 	}
 	.contact_headline {
-		font-size: 3.2rem /* 48px */;
-		line-height: 1;
+		font-size: 3.7rem /* 48px */;
 		font-weight: 700;
-		padding: 1rem 0;
+		margin: 0;
+		padding-bottom: 1.5rem;
 	}
 	.label {
 		font-weight: 700;
-		font-size: 1.5rem /* 20px */;
-		line-height: 1.75rem /* 28px */;
+		margin: 0;
 	}
 	.info_text {
 		font-size: 1.25rem /* 20px */;
-		line-height: 1.75rem /* 28px */;
+		margin: 0;
+		line-height: 1;
+		font-weight: 300;
 	}
 	.info_link_text {
 		color: rgb(249 115 22);
@@ -69,12 +69,14 @@ import {
 		line-height: 1.75rem /* 28px */;
 		font-weight: 600;
 	}
+	.info_link_text > p {
+		margin: 0;
+	}
 
 	.contact_info_group {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		margin-bottom: rem;
+		gap: 1.5rem;
 	}
 
 	.google_maps_embed {
