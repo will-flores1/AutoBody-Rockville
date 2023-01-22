@@ -15,46 +15,29 @@ import { IF_YOU_NEED_CTA } from "../const.js";
 			))
 		}
 	</ul>
-	<h2 style="text-align: center; margin: 0; letter-spacing: 2px;">Call us</h2>
-	<div class="call_button_wrapper">
+	<div style="text-align: center;">
 		<CallButton />
 	</div>
 </div>
 
 <style>
 	.cta_section_wrapper {
-		color: rgb(45, 45, 45);
+		background-color: rgb(242, 242, 242);
 		text-align: left;
-		background-color: rgb(248 250 252);
+		padding: 1rem 0;
 	}
 	.cta_headline {
 		text-decoration: underline;
-		text-decoration-color: rgb(249 115 22);
-		font-weight: 700;
-		font-size: 3rem /* 60px */;
-		text-align: center;
-		color: rgb(249 115 22);
-		margin: 0;
-		padding: 1rem 0;
-	}
-
-	.cta_section_wrapper > ul {
-		list-style: none;
-		padding: 0;
-		margin: auto;
-	}
-	.call_button_wrapper {
+		font-weight: 800;
+		color: var(--theme-color);
 		text-align: center;
 	}
-
 	.list_item_icon {
-		width: 4rem;
+		width: 3rem;
+		height: 3rem;
 	}
 	.list_item {
 		display: flex;
-	}
-
-	li > h2 {
-		font-size: 1.6rem;
+		align-items: center;
 	}
 </style>
