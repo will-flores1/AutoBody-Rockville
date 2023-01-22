@@ -1,63 +1,45 @@
 ---
-export interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
-
-const { href, title, body } = Astro.props;
+const { card_title, card_description, href } = Astro.props;
 ---
 
-<li class="link-card">
+<div class="service_card">
+	<img
+		src="/assets/traffic.jpg"
+		alt="cars in traffic"
+		class="service_card_img"
+		loading="lazy"
+	/>
+	<h2>{card_title}</h2>
+	<p>
+		{card_description}
+	</p>
 	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
+		<div>Learn more</div>
 	</a>
-</li>
+</div>
+
 <style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 0.15rem;
-		background-color: white;
-		background-image: var(--accent-gradient);
-		background-size: 400%;
+	.service_card {
+		padding: 1rem;
+		margin: 0;
+		background-color: rgb(246, 246, 246);
 		border-radius: 0.5rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-			0 2px 4px -2px rgba(0, 0, 0, 0.1);
+		height: 100%;
 	}
 
-	.link-card > a {
-		width: 100%;
+	.service_card_img {
+		object-fit: cover;
+		height: auto;
+		max-width: 100%;
+	}
+	a > div {
+		background-color: var(--theme-color);
+		color: white;
+		cursor: pointer;
+		padding: 1rem;
+		width: max-content;
+	}
+	a {
 		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-		color: #444;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
 	}
 </style>
