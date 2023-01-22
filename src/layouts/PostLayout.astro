@@ -1,12 +1,12 @@
 ---
 import Layout from "./Layout.astro";
 
-const { headline, title, description } = Astro.props;
+const { headline, title, description, redirect = "" } = Astro.props;
 ---
 
 <Layout headline={headline} title={title} description={description}>
 	<div class="back_wrapper">
-		<a href="/faq">Go back</a>
+		<a href={"/" + redirect}>Go back</a>
 	</div>
 	<slot />
 </Layout>
