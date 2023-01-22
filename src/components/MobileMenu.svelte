@@ -1,5 +1,8 @@
 <script>
+	import { each } from "svelte/internal";
 	import { fly } from "svelte/transition";
+	import xmark from "../../public/assets/xmark.svg";
+	import { paths } from "../const.js";
 
 	export let show = false;
 </script>
@@ -12,13 +15,14 @@
 		<ul>
 			<li>
 				<button on:click={() => (show = !show)} class="close">
-					<div>X</div>
+					<img src={xmark} alt="close menu" height="30" width="30" />
 				</button>
 			</li>
-			<li class="list_item"><a href="/"><div>Home</div></a></li>
-			<li class="list_item"><a href="/services"><div>Services</div></a></li>
-			<li class="list_item"><a href="/contactus"><div>Contact Us</div></a></li>
-			<li class="list_item"><a href="/faq"><div>FAQ</div></a></li>
+			{#each paths as item}
+				<li class="list_item">
+					<a href={item.path}><div>{item.title}</div></a>
+				</li>
+			{/each}
 		</ul>
 	</nav>
 {/if}
@@ -63,15 +67,16 @@
 		font-weight: 500;
 	}
 	.close {
-		background-color: black;
+		background-color: rgb(234, 234, 234);
+		border: 1px solid rgba(0, 0, 0, 0.45);
 		color: white;
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		padding: 3rem 0px;
+		padding: 2rem 0px;
 		cursor: pointer;
 	}
 	.close:active {
-		background-color: blue;
+		background-color: rgba(0, 0, 0, 0.6);
 	}
 </style>
