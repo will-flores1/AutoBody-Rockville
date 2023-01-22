@@ -14,6 +14,25 @@ export const PHONE_NUMBER_FORMATTED = "(301) 000-0000";
 export const SITE_TITLE = `Auto Body ${LOCATION}. Paint, Dent, Collision Repair`; // 50
 export const SITE_DESCRIPTION = `${PHONE_NUMBER_FORMATTED} - Collision Repair & Auto Body in ${LOCATION}, ${LOCATION_STATE} | dents, scratches, bumpers, fenders. We turn Wrecks into Wonders - Call Us Today.`; // 145
 
+export const paths = [
+	{
+		title: "HOME",
+		path: "/",
+	},
+	{
+		title: "services",
+		path: "/services",
+	},
+	{
+		title: "faq",
+		path: "/faq",
+	},
+	{
+		title: "contact us",
+		path: "/contactus",
+	},
+];
+
 export const ABOUT_US_PAGE = {
 	title: "About Us. Paint, Dent, Collision, Bumper Repair",
 	description:
