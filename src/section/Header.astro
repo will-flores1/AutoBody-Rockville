@@ -1,5 +1,6 @@
 ---
 import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
+import ToggleMenu from "../components/ToggleMenu.svelte";
 ---
 
 <header>
@@ -49,13 +50,20 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 			</li>
 		</ul>
 	</nav>
+	<div class="menu">
+		<ToggleMenu client:visible />
+	</div>
 
 	<script defer></script>
 
 	<style>
+		.menu {
+			/* background-color: blue; */
+		}
 		.nav_wrapper {
 			background-color: rgb(59 130 246);
 			margin: 0;
+			display: none;
 		}
 		.button_class {
 			background-color: rgb(255, 106, 0);
@@ -160,6 +168,9 @@ import { PHONE_NUMBER, PHONE_NUMBER_FORMATTED } from "../const.js";
 		}
 
 		@media (min-width: 768px) {
+			.nav_wrapper {
+				display: block;
+			}
 			.button_class {
 				display: none;
 				padding: 1.8rem 30vw;
