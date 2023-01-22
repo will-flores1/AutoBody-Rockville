@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import PostLayout from "../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-	const posts = await Astro.glob("../faq/*.md");
+	const posts = await Astro.glob("../blog/*.md");
 	return posts.map((post) => {
 		return {
 			params: { slug: post.frontmatter.slug },
