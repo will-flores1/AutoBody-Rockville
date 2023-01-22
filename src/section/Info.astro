@@ -1,60 +1,61 @@
 ---
-import { Image } from "@astrojs/image/components";
-// import traffic from "/assets/traffic.jpg";
+import Card from "../components/Card.astro";
+const service_cards = [
+	{
+		title: "EXTERIOR PAINTWORK",
+		description:
+			"exterior painting of your vehicle, with high-quality materials, skilled labor, achieving excellent results.",
+		href: "/",
+	},
+	{
+		title: "LIGHT BUMPS, SCRATCHES AND TOUCH-UPS",
+		description: "We can fix minor bumps and scratches.",
+		href: "/",
+	},
+	{
+		title: "PAINT RESTORATION",
+		description: "Renew the color and shine of your car.",
+		href: "/",
+	},
+	{
+		title: "DENT REMOVAL",
+		description: "Renew the color and shine of your car.",
+		href: "/",
+	},
+];
 ---
 
 <div class="info_wrapper">
-	<h2 class="info_headline">Car Accidents</h2>
-	<img
-		src="/assets/traffic.jpg"
-		alt="cars in traffic"
-		height={420}
-		width={420}
-		class="info_banner"
-	/>
-	<p>
-		Car accidents can happen to anyone, at any time. It can be overwhelming to
-		deal with the aftermath of a car accident. That's where we step in. We'll
-		make sure your vehicle is repaired so you can get back on the road safely.
-	</p>
-	<p>
-		Always use patience when driving. Patience saves lives. Safety is of utmost
-		importance on our roadways at all times. Attention and courtesy will go a
-		long way to make our roadways safer and more enjoyable.
-	</p>
+	<h1 class="info_headline">Services</h1>
+	<div class="service_card_group">
+		{
+			service_cards.map((item) => (
+				<div>
+					<Card
+						card_title={item.title}
+						card_description={item.description}
+						href={item.href}
+					/>
+				</div>
+			))
+		}
+	</div>
 </div>
 
 <style>
 	.info_wrapper {
-		background-color: rgb(248, 250, 252);
-		color: rgb(17 24 39);
-		padding-bottom: 0.5rem;
+		margin-top: 3rem;
 	}
 
 	.info_headline {
-		font-weight: 700;
-		padding: 1rem 0 0 0;
 		text-align: center;
-		margin: 0;
-		font-size: 2rem;
+		text-decoration: underline;
 	}
-
-	.info_wrapper > ul {
-		list-style: none;
-		padding: 0;
+	.service_card_group {
+		gap: 1rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	}
-
-	.info_item {
-	}
-
-	.list_text {
-		font-size: 1.1rem;
-		font-weight: 500;
-		line-height: 1.4;
-	}
-	.info_banner {
-		height: 9rem /* 144px */;
-		object-fit: cover;
-		width: 100%;
+	@media (min-width: 768px) {
 	}
 </style>
