@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../section/Footer.astro";
 import Header from "../section/Header.astro";
+import { GA_MEASUREMENT_ID } from "../const.js";
 // import { Image } from "@astrojs/image/components";
 // import backgroundimage from "/assets/bgImg.jpeg";
 export interface Props {
@@ -13,7 +14,21 @@ export interface Props {
 const { headline, title, description } = Astro.props;
 ---
 
-<!-- Layout contains meta title, meta desc., & the page headline --><!DOCTYPE html>
+<!-- head -->
+<script
+	type="text/partytown"
+	src={"https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID}
+></script>
+<script type="text/partytown">
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+	gtag("config", "GA_MEASUREMENT_ID");
+</script>
+
+<!-- more head --><!-- Layout contains meta title, meta desc., & the page headline -->
 <html lang="en">
 	<BaseHead description={description} title={title} />
 	<body>
