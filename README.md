@@ -1,9 +1,18 @@
 # TO-DO
 
-[] switch background to rtc
-[] remove tailwind
-[] research and add robot.txt file
-[] optimize image files sizes (webp)
+- [] Rewrite content from auto body books from libgen since it won't count as duplicate content
+- [] generate content from frequently question on business type (auto body) and use quillbot to avoid duplicate content
+- [] switch background to rtc
+- [x] remove tailwind
+- [x] fix tailwind mess
+- [] research and add robot.txt file
+- [] optimize image files sizes (webp)
+- [] canonical links meta
+- [] get rid of image background
+
+# IDEAS
+
+- Scratch Repair Auto Body | Rockville bumper, fender (51)
 
 # Welcome to [Astro](https://astro.build)
 
