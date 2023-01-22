@@ -25,7 +25,7 @@ const { headline, title, description } = Astro.props;
 		dataLayer.push(arguments);
 	}
 	gtag("js", new Date());
-	gtag("config", "GA_MEASUREMENT_ID");
+	gtag("config", { GA_MEASUREMENT_ID });
 </script>
 
 <!-- more head --><!-- Layout contains meta title, meta desc., & the page headline -->
@@ -47,11 +47,13 @@ const { headline, title, description } = Astro.props;
 		</div>
 		<style is:global>
 			:root {
-				--background-color: #030303;
+				--background-color: #ffffff;
 				--neutral-color: #1a1a1b;
+				--theme-color: #ff6a00;
 			}
 			* {
 				box-sizing: border-box;
+				color: black;
 				/* border: 1px solid red; */
 			}
 			html,
@@ -81,7 +83,7 @@ const { headline, title, description } = Astro.props;
 			}
 			.layout_wrapper {
 				margin: auto;
-				background-color: var(--neutral-color);
+				background-color: var(--background-color);
 				padding: 0.5rem;
 				color: white;
 			}
