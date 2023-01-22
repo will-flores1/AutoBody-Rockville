@@ -3,6 +3,7 @@ import CallButton from "../components/CallButton.astro";
 import Layout from "../layouts/Layout.astro";
 import { SERVICES_PAGE } from "../const.js";
 import BaseHead from "../components/BaseHead.astro";
+import UnderConstruction from "../components/UnderConstruction.astro";
 
 const { content, title, description } = SERVICES_PAGE;
 ---
@@ -28,6 +29,7 @@ const { content, title, description } = SERVICES_PAGE;
 			))
 		}
 	</a>
+	<UnderConstruction />
 </Layout>
 <style>
 	.services_page_subheading {
