@@ -1,4 +1,5 @@
 // SEO RULES titles < 50 characters, descriptions < 150 characters
+export const WEBSITE = "rockvilleautobodyco.com";
 export const INDUSTRY = "Auto Body Shop";
 export const EMAIL = "info@email.com";
 export const ADDRESS = "1621 East Gude Dr, Rockville, MD 20850";
@@ -9,8 +10,8 @@ export const LOCATION_STATE = "MD";
 export const PHONE_NUMBER = "0000000000";
 export const PHONE_NUMBER_FORMATTED = "(301) 000-0000";
 
-export const SITE_TITLE = `Auto Body ${LOCATION}. Paint, Dent, Collision Repair`; // 500
-export const SITE_DESCRIPTION = `Auto Body Shop in ${LOCATION}, ${LOCATION_STATE}. Call ${PHONE_NUMBER_FORMATTED}. Paint Repair, Collision Repair, Dent Removal, Fender Repair, Bumper Repair, and Scratch Repair.`; // 149
+export const SITE_TITLE = `Auto Body ${LOCATION}. Paint, Dent, Collision Repair`; // 50
+export const SITE_DESCRIPTION = `${PHONE_NUMBER_FORMATTED} - Collision Repair & Auto Body in ${LOCATION}, ${LOCATION_STATE} | dents, scratches, bumpers, fenders. We turn Wrecks into Wonders - Call Us Today.`; // 145
 
 export const ABOUT_US_PAGE = {
 	title: "About Us. Paint, Dent, Collision, Bumper Repair",
@@ -107,18 +108,18 @@ export const IF_YOU_NEED_CTA = [
 	},
 ];
 
-export const FAQ_PAGE = {
-	title: "Have a question about your vehicle? Click here.",
-	description:
-		"Uncertain of the price of a car repair? Do you have a question about damage to your vehicle? The most frequently asked questions, answered below.",
-	headline: "FREQUENTLY ASKED QUESTIONS",
-	FAQ_PAGES: [
-		{
-			slug: "how-much-is-full-body-work-on-a-car",
-			pathname: "/how-much-is-full-body-work-on-a-car",
-			question: "How much is full body work on a car?",
-			answer:
-				"Unforeseen events might result in auto body damage, which makes finding the best repair shop more difficult. Finding the best repair facility is essential after you notice dents or other issues with your paint or auto body. Auto body shops evaluate body damage using a variety of criteria. The repair business examines your car before beginning the repair process. They can now see the genuine auto body damage thanks to this. Once it is located, the proper repair procedure is established, and the repair process starts. Different techniques are employed by auto body shops to fix dents and other damage. A trustworthy auto body shop will guide you through the full repair procedure. Choosing the ideal auto body shop is one of the most essential parts of the process. Ok now that that's out of the way, let's answer the question. Parts, labour, and other costs might cost anything from $100 to hundreds of dollars. You can research the cost of replacing the damaged parts, the length of the repair procedure, and the labour cost (say $90/hr) to get a general idea of how much it will cost to fix your car. Car bumpers typically cost between $500 and $1,500, and painting a damaged fender costs between $500 and $2,500.",
-		},
-	],
-};
+// export const FAQ_PAGE = {
+// 	title: "Have a question about your vehicle? Click here.",
+// 	description:
+// 		"Uncertain of the price of a car repair? Do you have a question about damage to your vehicle? The most frequently asked questions, answered below.",
+// 	headline: "FREQUENTLY ASKED QUESTIONS",
+// 	FAQ_PAGES: [
+// 		{
+// 			slug: "how-much-is-full-body-work-on-a-car",
+// 			pathname: "/how-much-is-full-body-work-on-a-car",
+// 			question: "How much is full body work on a car?",
+// 			answer:
+// 				"Unforeseen events might result in auto body damage, which makes finding the best repair shop more difficult. Finding the best repair facility is essential after you notice dents or other issues with your paint or auto body. Auto body shops evaluate body damage using a variety of criteria. The repair business examines your car before beginning the repair process. They can now see the genuine auto body damage thanks to this. Once it is located, the proper repair procedure is established, and the repair process starts. Different techniques are employed by auto body shops to fix dents and other damage. A trustworthy auto body shop will guide you through the full repair procedure. Choosing the ideal auto body shop is one of the most essential parts of the process. Ok now that that's out of the way, let's answer the question. Parts, labour, and other costs might cost anything from $100 to hundreds of dollars. You can research the cost of replacing the damaged parts, the length of the repair procedure, and the labour cost (say $90/hr) to get a general idea of how much it will cost to fix your car. Car bumpers typically cost between $500 and $1,500, and painting a damaged fender costs between $500 and $2,500.",
+// 		},
+// 	],
+// };
