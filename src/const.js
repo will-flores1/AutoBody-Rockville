@@ -1,4 +1,5 @@
 // SEO RULES titles < 50 characters, descriptions < 150 characters
+export const GA_MEASUREMENT_ID = "";
 export const WEBSITE = "rockvilleautobodyco.com";
 export const INDUSTRY = "Auto Body Shop";
 export const EMAIL = "info@email.com";
