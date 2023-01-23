@@ -1,7 +1,5 @@
 <script>
 	import MobileMenu from "./MobileMenu.svelte";
-	import icon from "../../public/assets/car_logo.svg";
-	import bars from "../../public/assets/menu.svg";
 
 	let sidebar_show = false;
 
@@ -11,7 +9,9 @@
 </script>
 
 <div class="mobile_menu">
-	<div class="logo"><img src={icon} alt="logo" height="30" width="30" /></div>
+	<div class="logo">
+		<img src="/assets/car_logo.svg" alt="logo" height="30" width="30" />
+	</div>
 	<button on:click={toggle}>
 		<div class="hamburger_menu">
 			<svg
