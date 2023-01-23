@@ -3,12 +3,6 @@ const { card_title, card_description, href } = Astro.props;
 ---
 
 <div class="service_card">
-	<img
-		src="/assets/traffic.jpg"
-		alt="cars in traffic"
-		class="service_card_img"
-		loading="lazy"
-	/>
 	<h2>{card_title}</h2>
 	<p>
 		{card_description}
@@ -25,6 +19,9 @@ const { card_title, card_description, href } = Astro.props;
 		background-color: rgb(246, 246, 246);
 		border-radius: 0.5rem;
 		height: 100%;
+	}
+	h2 {
+		text-transform: uppercase;
 	}
 
 	.service_card_img {
