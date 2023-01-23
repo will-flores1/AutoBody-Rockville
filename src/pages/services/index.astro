@@ -1,0 +1,112 @@
+---
+import CallButton from "../../components/CallButton.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SERVICES_PAGE } from "../../const.js";
+import UnderConstruction from "../../components/UnderConstruction.astro";
+
+const { content, title, description } = SERVICES_PAGE;
+---
+
+<!-- Layout contains meta title, meta desc., & the page headline -->
+<Layout headline="SERVICES" title={title} description={description}>
+	<p class="services_page_subheading">
+		ROCKVILLE SPECIALISTS IN COLLISION AND AUTO BODY REPAIR
+	</p>
+	<div style="text-align: center;">
+		<CallButton />
+	</div>
+	<p>
+		At our shop, we use the latest technology and equipment to ensure the
+		highest quality repairs. Overall, our goal is to get you back on the road as
+		soon as possible with a vehicle that looks and runs like new. We are here to
+		help you with all your car's needs, from minor repairs to major collision
+		work.
+	</p>
+	{
+		content.map((post) => (
+			<a href={"/services" + post.path} class="services_items_wrapper">
+				<div class="services_item">
+					<h1 class="services_item_title">
+						{post.title}
+						<span style="color: orange;">&#8611;</span>
+					</h1>
+					<p class="services_item_description">{post.description}</p>
+				</div>
+			</a>
+		))
+	}
+</Layout>
+<style>
+	.services_page_subheading {
+		margin: 0.3rem 0;
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.services_items_wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+		margin-top: 1rem;
+		text-decoration: none;
+	}
+
+	.services_item {
+		width: clamp(20rem, 50%, 30rem);
+		flex: 1 1 auto;
+		color: white;
+		border: 4px solid white;
+		padding: 0.8rem;
+		background: linear-gradient(
+				to left,
+				rgba(255, 187, 0, 0) 50%,
+				rgba(255, 174, 0, 0.297) 50%
+			)
+			right;
+		background-size: 200%;
+		transition: 0.5s ease-out;
+	}
+
+	.services_item:hover {
+		background-position: left;
+	}
+
+	.services_item_title {
+		margin: 0;
+		font-size: 2.2rem /* 60px */;
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	.services_item_description {
+		font-size: 1.1rem /* 20px */;
+		line-height: 1.5rem /* 36px */;
+		padding: 0;
+		margin: 0.5rem 0 0 0;
+	}
+	.services_item_title {
+		text-transform: uppercase;
+	}
+
+	@media (min-width: 768px) {
+		.services_item {
+			padding: 1rem;
+		}
+
+		.services_page_subheading {
+			margin-top: 0.4rem;
+			font-size: 1.2rem;
+		}
+		.services_items_wrapper {
+			margin-top: 2.3rem;
+		}
+
+		.services_item_title {
+			font-size: 3rem;
+		}
+
+		.services_item_description {
+			font-size: 1.3rem;
+		}
+	}
+</style>
