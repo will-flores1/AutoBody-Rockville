@@ -48,31 +48,53 @@ export const SERVICES_PAGE = {
 			title: "AUTO BODY PAINT REPAIR",
 			description:
 				"Our team of experts have the skill and experience to repair any type of damage, from small scratches to major bodywork.",
+			path: "/paint-repair",
 		},
 		{
 			title: "COLLISION REPAIR",
 			description:
 				"From minor dings to major accidents. We offer professional and comprehensive collision repair services.",
+			path: "/collision-repair",
 		},
 		{
 			title: "AUTO DENT REMOVAL",
 			description:
 				"We understand the frustration of unsightly dents on your vehicle. We offer professional and efficient dent removal services.",
+			path: "/dent-removal",
+		},
+		{
+			title: "Rust repair",
+			description:
+				"We can repair or remove rust from your vehicle, to prevent it from spreading and causing more damage.",
+			path: "/rust-repair",
+		},
+		{
+			title: "auto detailing",
+			description: "We'll have your car looking and feeling new.",
+			path: "/auto-detailing",
+		},
+		{
+			title: "Glass repair and replacement",
+			description: "We can repair or replace any broken or damaged auto glass.",
+			path: "/glass-repair-and-replacement",
 		},
 		{
 			title: "FENDER REPAIR",
 			description:
-				"Bumper/fender collision? We'll fix any damage to the fenders of a vehicle.",
+				"Fender collision? We'll fix any damage to the fenders of a vehicle.",
+			path: "/fender-repair",
 		},
 		{
 			title: "BUMPER REPAIR",
 			description:
 				"Bumpers play an important role in minimizing body damage. But they also take the brunt of the impact. We specialize in repairing damage to the bumpers of vehicles.",
+			path: "/bumper-repair",
 		},
 		{
 			title: "SCRATCH REPAIR",
 			description:
 				"Paint scratches, Clear coat scratches, primer scratches, we specialize in scratch repair.",
+			path: "/scratch-repair",
 		},
 	],
 };
