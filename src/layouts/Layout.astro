@@ -33,13 +33,6 @@ const { headline, title, description } = Astro.props;
 	<BaseHead description={description} title={title} />
 	<body>
 		<Header />
-		<img
-			src="/assets/bgImg.jpeg"
-			width={1800}
-			height={2000}
-			class="background_image"
-			alt="background cars"
-		/>
 		<div class="layout_wrapper">
 			<h1 class="page_headline">{headline}</h1>
 			<slot />
