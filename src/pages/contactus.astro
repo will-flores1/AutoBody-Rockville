@@ -1,20 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Contact from "../section/Contact.astro";
 import { CONTACT_US_PAGE } from "../const.js";
-import BaseHead from "../components/BaseHead.astro";
+import { PHONE_NUMBER_FORMATTED, LOCATION, LOCATION_STATE } from "../const.js";
 
 const { title, description } = CONTACT_US_PAGE;
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<title>{title}</title>
-		<link rel="canonical" href={Astro.url} />
-	</head>
-	<Layout headline="CONTACT US">
-		<Contact />
-	</Layout>
-</html>
+<Layout
+	headline="CONTACT US"
+	title="Auto Body Services Rockville - Contact us Today."
+	description={`${PHONE_NUMBER_FORMATTED} - Collision Repair & Auto Body in ${LOCATION}, ${LOCATION_STATE} | dents, scratches, bumpers, fenders. We turn Wrecks into Wonders - Call Us Today.`}
+/>
