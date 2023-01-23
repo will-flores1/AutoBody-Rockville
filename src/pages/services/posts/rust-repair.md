@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: rust-repair
+headline: Rust Repair
 title: Auto Body Services Rockville - Rust Repair
 description: We repair or remove rust from your vehicle, to prevent it from spreading and causing more damage
 draft: false
@@ -25,4 +26,4 @@ We use high-quality paint and strict quality control procedures to ensure a perf
 
 In addition to our rust repair services, we also offer a variety of other services such as [collision repair](./collision-repair), [auto painting](./paint-repair) and [auto detailing](./auto-detailing) to keep your car looking like new.
 
-We understand the importance of rust repair and the impact it has on the safety and longevity of your vehicle. That's why we pride ourselves on our commitment to providing quality service and repair work that is done right the first time. Our team is dedicated to making sure that you are completely satisfied with the work we do on your vehicle. If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help you keep your car rust-free and in top condition.
+We're aware of the significance of rust repair and how it affects the durability and safety of your car. We take pleasure in our dedication to offering you high-quality service and repairs that are completed correctly the first time. To ensure that you are totally satisfied with the job we do on your car, our crew is committed. Please do not hesitate to contact us if you have any questions.

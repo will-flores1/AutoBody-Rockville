@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: glass-repair-and-replacement
+headline: Glass Repair and Replacement
 title: Auto Body Services Rockville - Glass Repair & replacement
 description: We repair or remove glass from your vehicle, to prevent it from spreading and causing more damage
 draft: false

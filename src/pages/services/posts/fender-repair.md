@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: fender-repair
+headline: Fender Repair
 title: Auto Body Services Rockville - Fender Repair
 description: Fender collision? We'll fix any damage to the fenders of a vehicle.
 draft: false

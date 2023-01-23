@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: collision-repair
+headline: Collision Repair
 title: Auto Body Services Rockville - Collision Repair
 description: From minor dings to major accidents. We offer professional and comprehensive collision repair services. We repair damage from accidents, including body work and paint.
 draft: false

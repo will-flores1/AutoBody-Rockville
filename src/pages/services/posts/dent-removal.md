@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: dent-removal
+headline: Dent Removal
 title: Auto Body Services Rockville - Dent Removal
 description: From minor dings to major accidents. We use high-quality paint and techniques to restore the original color and finish of your vehicle.
 draft: false

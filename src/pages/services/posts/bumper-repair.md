@@ -2,6 +2,7 @@
 # layout: "../../layouts/PostLayout.astro"
 category: services
 slug: bumper-repair
+headline: Bumper Repair
 title: Auto Body Services Rockville - Bumper Repair
 description: Bumper collision? We'll fix any damage to the bumpers of a vehicle. We specialize in repairing damage to the bumpers of vehicles.
 draft: false
