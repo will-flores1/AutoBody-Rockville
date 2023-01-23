@@ -13,17 +13,16 @@ const posts = await Astro.glob("./posts/*.md");
 	<div class="questions_wrapper">
 		{
 			posts.map((post) => (
-				<div>
-					<h3>{post.frontmatter.title}</h3>
-					<div>
-						Written by <strong>{post.frontmatter.author} </strong> on{" "}
-						{new Date(post.frontmatter.date).toLocaleDateString()}
-					</div>
+				<a href={"/faq/" + post.frontmatter.slug} class="faq_items_wrapper">
+					<div class="faq_wrapper">
+						<h2>{post.frontmatter.headline}</h2>
+						<p>{post.frontmatter.description.slice(0, 70)}...</p>
 
-					<a class="btn" href={`/faq/${post.frontmatter.slug}`}>
-						Read More
-					</a>
-				</div>
+						<a class="btn" href={`/faq/${post.frontmatter.slug}`}>
+							Read More
+						</a>
+					</div>
+				</a>
 			))
 		}
 	</div>
@@ -31,8 +30,41 @@ const posts = await Astro.glob("./posts/*.md");
 </Layout>
 
 <style>
+	h2,
+	p {
+		margin: 0;
+		line-height: 1.2;
+	}
+	a {
+		color: blue;
+	}
 	.questions_wrapper {
 		padding-top: 1rem;
+	}
+	.faq_items_wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+		margin-top: 1rem;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+	}
+	.faq_wrapper {
+		box-shadow: 5px 2px 0 black;
+		width: clamp(20rem, 100%, 100%);
+		width: clamp(20rem, 100%, 100%);
+		flex: 1 1 auto;
+		color: white;
+		border: 4px solid white;
+		padding: 0.8rem;
+		transition: all 0.5s ease-out;
+	}
+	.faq_wrapper:hover {
+		box-shadow: 2px 1px 0 black;
+	}
+	.faq_wrapper:hover > .btn {
+		text-decoration: underline;
 	}
 
 	.item_link > h1 {
