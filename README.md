@@ -1,14 +1,14 @@
 # TO-DO
 
-- [] Rewrite content from auto body books from libgen since it won't count as duplicate content
 - [] generate content from frequently question on business type (auto body) and use quillbot to avoid duplicate content
 - [] switch background to rtc
 - [x] remove tailwind
 - [x] fix tailwind mess
-- [] research and add robot.txt file
-- [] optimize image files sizes (webp)
+- [x] research and add robot.txt file
+- [x] optimize image files sizes (webp)
 - [] canonical links meta
-- [] get rid of image background
+- [x] get rid of image background
+- [] replace .md files with .mdx to use variables (phone number)
 
 # IDEAS
 
