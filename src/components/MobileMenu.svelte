@@ -1,7 +1,5 @@
 <script>
-	import { each } from "svelte/internal";
 	import { fly } from "svelte/transition";
-	import xmark from "../../public/assets/xmark.svg";
 	import { paths } from "../const.js";
 
 	export let show = false;
@@ -15,7 +13,12 @@
 		<ul>
 			<li>
 				<button on:click={() => (show = !show)} class="close">
-					<img src={xmark} alt="close menu" height="30" width="30" />
+					<img
+						src="/assets/xmark.svg"
+						alt="close menu"
+						height="30"
+						width="30"
+					/>
 				</button>
 			</li>
 			{#each paths as item}
