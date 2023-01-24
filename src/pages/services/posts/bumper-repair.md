@@ -24,3 +24,9 @@ Our services include:
 In addition to our rust repair services, we also offer a variety of other services such as [collision repair](./collision-repair), [auto painting](./paint-repair) and [fender repair](./fender-repair) to keep your car looking like new.
 
 Our team is dedicated to making sure that you are completely satisfied with the work we do on your vehicle. If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help you keep your car in top condition.
+
+<style>
+	a {
+		color: blue;
+	}
+</style>

@@ -27,3 +27,9 @@ We use high-quality paint and strict quality control procedures to ensure a perf
 In addition to our rust repair services, we also offer a variety of other services such as [collision repair](./collision-repair), [auto painting](./paint-repair) and [auto detailing](./auto-detailing) to keep your car looking like new.
 
 We're aware of the significance of rust repair and how it affects the durability and safety of your car. We take pleasure in our dedication to offering you high-quality service and repairs that are completed correctly the first time. To ensure that you are totally satisfied with the job we do on your car, our crew is committed. Please do not hesitate to contact us if you have any questions.
+
+<style>
+	a {
+		color: blue;
+	}
+</style>

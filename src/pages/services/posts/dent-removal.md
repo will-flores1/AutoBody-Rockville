@@ -25,4 +25,10 @@ PDR is a cost-effective and efficient method of dent removal, as it eliminates t
 
 In addition to our dent removal services, we also offer a variety of other services such as collision repair, [auto painting](./paint-repair) and [auto detailing](./auto-detailing) to keep your car looking like new.
 
-We pride ourselves on our commitment to providing quality service and repair work that is done right the first time. Our team is dedicated to making sure that you are completely satisfied with the work we do on your vehicle. If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help you keep your car looking its best.
+If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help you keep your car looking its best.
+
+<style>
+	a {
+		color: blue;
+	}
+</style>

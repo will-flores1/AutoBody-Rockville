@@ -27,3 +27,9 @@ Our services include:
 We also work with insurance companies to make the claims process as seamless as possible for our customers. Our team can help you navigate the insurance claims process, and work with your insurance company to ensure you get the repairs you need.
 
 If you have been involved in an accident and need collision repair, please don't hesitate to contact us. Our team is here to help you get your car back to its pre-accident condition as quickly and efficiently as possible.
+
+<style>
+	a {
+		color: blue;
+	}
+</style>
