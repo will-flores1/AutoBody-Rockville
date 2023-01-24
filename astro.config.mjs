@@ -7,6 +7,18 @@ import svelte from "@astrojs/svelte";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
+import partytown from "@astrojs/partytown";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [, svelte(), mdx()]
+	integrations: [
+		,
+		svelte(),
+		mdx(),
+		partytown({
+			config: {
+				forward: ["dataLayer.push"],
+			},
+		}),
+	],
 });
