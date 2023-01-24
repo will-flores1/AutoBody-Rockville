@@ -14,20 +14,6 @@ export interface Props {
 const { headline, title, description } = Astro.props;
 ---
 
-<!-- head -->
-<script
-	type="text/partytown"
-	src={"https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID}
-></script>
-<script type="text/partytown">
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
-	gtag("config", { GA_MEASUREMENT_ID });
-</script>
-
 <!-- more head --><!-- Layout contains meta title, meta desc., & the page headline -->
 <html lang="en">
 	<BaseHead description={description} title={title} />
