@@ -10,7 +10,11 @@ import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
+	site: "https://autobodyservicerockville.com",
 	integrations: [
 		,
 		svelte(),
@@ -20,5 +24,6 @@ export default defineConfig({
 				forward: ["dataLayer.push"],
 			},
 		}),
+		sitemap(),
 	],
 });
