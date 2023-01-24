@@ -1,9 +1,9 @@
 ---
 # layout: "../../layouts/PostLayout.astro"
-category: blog
+category: faq
 slug: how-much-is-full-body-work-on-a-car
-headline: How much is full body work on a car?
-title: How much is full body work on a car? - Auto Body Services Rockville
+headline: How Much Is Full Body Work On A Car?
+title: How Much Is Full Body Work On A Car? - Auto Body Services Rockville
 date: 1/22/2023
 description: While auto body restoration costs can vary greatly. For a good repair work, you should budget anywhere from $75 to $2,500 on average.
 draft: false
