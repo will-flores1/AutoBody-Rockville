@@ -46,7 +46,7 @@
 		cursor: pointer;
 		padding: 0;
 		margin: 0;
-		padding: 0.4rem;
+		padding: 0.7rem;
 		border: none;
 		background-color: Transparent;
 	}
