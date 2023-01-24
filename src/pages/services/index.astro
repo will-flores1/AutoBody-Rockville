@@ -5,7 +5,6 @@ import { SERVICES_PAGE } from "../../const.js";
 import UnderConstruction from "../../components/UnderConstruction.astro";
 
 const posts = await Astro.glob("./posts/*.md");
-console.log(posts);
 
 const { content, title, description } = SERVICES_PAGE;
 ---
