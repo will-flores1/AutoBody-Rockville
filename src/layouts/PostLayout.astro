@@ -6,7 +6,7 @@ const { headline, title, description, redirect = "" } = Astro.props;
 
 <Layout headline={headline} title={title} description={description}>
 	<div class="back_wrapper">
-		<a href={"/" + redirect}>Go back</a>
+		<a href={"/" + redirect}>Go back: {redirect}</a>
 	</div>
 	<slot />
 </Layout>
@@ -22,6 +22,6 @@ const { headline, title, description, redirect = "" } = Astro.props;
 		border-radius: 4px;
 	}
 	.back_wrapper {
-		margin: 1rem 0;
+		margin: 2rem 0;
 	}
 </style>
