@@ -10,170 +10,85 @@ import { paths } from "../const.js";
 			&#128222; {PHONE_NUMBER_FORMATTED}
 		</button>
 	</a>
+	<nav class="nav_wrapper">
+		<div><img src="/assets/car_logo.svg" alt="" height="30" width="30" /></div>
+		<ul class="nav_ul_group">
+			{
+				paths.map((item) => (
+					<li class="nav_li_item">
+						<a href={item.path}>{item.title}</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+	<div class="menu">
+		<ToggleMenu client:visible />
+	</div>
 </header>
-<!-- <iframe
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.578640195654!2d-77.13480508446071!3d39.09329447954093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cd8e6835b643%3A0xaf1f32e63dbaac60!2s1621%20E%20Gude%20Dr%2C%20Rockville%2C%20MD%2020850!5e0!3m2!1sen!2sus!4v1673805169647!5m2!1sen!2sus"
-		class="google_maps_embed"
-		allowfullscreen=""
-		loading="lazy"
-		referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<button class="google_maps_text_link_wrapper">
-		<a
-			href="https://maps.google.com/?q=1621+E+Gude+Dr+Rockville+MD+20850"
-			class="google_maps_text_link">Click to open map</a
-		>
-	</button> -->
-<nav class="nav_wrapper">
-	<ul class="nav_ul_group">
-		{
-			paths.map((item) => (
-				<li class="nav_li_item">
-					<a href={item.path}>{item.title}</a>
-				</li>
-			))
-		}
-	</ul>
-</nav>
-<div class="menu">
-	<ToggleMenu client:visible />
-</div>
 
 <style>
-	.menu {
-		/* background-color: blue; */
-	}
-	.nav_wrapper {
-		background-color: rgb(59 130 246);
-		margin: 0;
-		display: none;
-	}
 	.button_class {
 		background-color: rgb(255, 106, 0);
 		width: 100%;
+		color: white;
 		border: none;
 		appearance: none;
 		margin: 0;
 		padding: 1rem 0;
-		color: white;
 		cursor: pointer;
 		font-size: 2rem /* 24px */;
 	}
 	.button_link {
-		color: white;
 		text-decoration: none;
 		background-color: rgb(255, 106, 0);
 		/* padding: 0.2rem 15vw; */
 		font-weight: 500;
 		text-shadow: 1px 3px 8px black;
 	}
-
+	/* menu */
+	.nav_wrapper {
+		color: black;
+		display: none;
+	}
 	.nav_ul_group {
 		display: flex;
-		justify-content: space-between;
 		padding: 0;
 		margin: 0;
-		height: 2.5rem;
-		list-style: none;
-		text-align: center;
 	}
 	.nav_li_item {
-		flex-grow: 1;
+		/* flex-grow: 1; */
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7);
 		text-transform: uppercase;
 	}
-	.nav_li_item:active {
-		box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.7);
-	}
-	.nav_li_item > a {
-		text-decoration: none;
-		font-size: 1rem;
-		padding: 0.8rem 8vw;
-		color: white;
-	}
-	.nav_li_item > a:visited {
-		list-decoration: none;
-		color: white;
-	}
 
-	/* #menu {
-			position: relative;
-		} */
-	/* #submenu {
-			position: relative;
-			flex-grow: 1;
-			top: 18px;
-		} */
-	/* 
-		.submenu_items {
-			padding: 1rem 0;
-			border-width: 2px;
-			background-color: rgb(248 250 252);
-			color: rgb(15 23 42);
-		} */
-
-	.google_maps_embed {
-		width: 100%;
-		height: 7rem;
+	header {
+		margin-bottom: 2rem;
 	}
-	.google_maps_text_link_wrapper {
-		background-color: rgb(255, 106, 0);
-		width: 100vw;
-		border: none;
-		appearance: none;
-		margin: 0;
-		padding: 0;
-		color: white;
-		cursor: pointer;
-		height: 2rem;
-	}
-
-	.google_maps_text_link {
-		color: rgb(255, 255, 255);
-		text-decoration: none;
-		background-color: rgb(255, 106, 0);
-		font-size: 1rem /* 24px */;
-		padding: 0.33rem 32vw;
-		font-weight: 500;
-	}
-	.hidden {
-		display: none;
-	}
-
 	@media (min-width: 768px) {
+		header {
+			margin-bottom: 4.5rem;
+		}
 		.nav_wrapper {
-			display: block;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1.4rem 0 0 2.5rem;
 		}
 		.button_class {
 			display: none;
 			padding: 1.8rem 30vw;
 		}
-		.button .google_maps_embed {
-			height: 10rem 160px;
-		}
-		.nav_ul_group {
-			height: 3.5rem;
-		}
-		.nav_li_item {
-			padding: 18px 0;
-		}
 		.nav_li_item > a {
 			font-size: 1.1rem;
-			padding: 1.2rem 8.1vw;
+			padding: 1rem 2.4vw;
+			text-decoration: none;
 		}
-		.google_maps_text_link_wrapper {
-			height: 3rem;
-		}
-		.google_maps_text_link {
-			/* width: 20rem; */
-			padding: 0.9rem 40vw;
-		}
-
-		.hidden {
-			display: block;
+		.nav_li_item > a:hover {
+			background: rgb(244, 244, 244);
 		}
 	}
 </style>
