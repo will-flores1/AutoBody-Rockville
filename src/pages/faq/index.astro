@@ -39,18 +39,21 @@ const posts = await Astro.glob("./posts/*.md");
 		color: blue;
 	}
 	.questions_wrapper {
-		padding-top: 1rem;
+		gap: 0.5rem;
+		display: flex;
+		flex-direction: column;
+
+		margin-top: 2rem;
 	}
 	.faq_items_wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.8rem;
-		margin-top: 1rem;
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
 	}
 	.faq_wrapper {
+		outline: 1px solid black;
 		box-shadow: 5px 2px 0 black;
 		width: clamp(20rem, 100%, 100%);
 		width: clamp(20rem, 100%, 100%);
