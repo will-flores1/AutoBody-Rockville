@@ -11,7 +11,9 @@ import { paths } from "../const.js";
 		</button>
 	</a>
 	<nav class="nav_wrapper">
-		<div><img src="/assets/car_logo.svg" alt="" height="30" width="30" /></div>
+		<a href="/">
+			<img src="/assets/car_logo.svg" alt="" height="30" width="30" />
+		</a>
 		<ul class="nav_ul_group">
 			{
 				paths.map((item) => (
@@ -37,7 +39,7 @@ import { paths } from "../const.js";
 		margin: 0;
 		padding: 1rem 0;
 		cursor: pointer;
-		font-size: 2rem /* 24px */;
+		/* font-size: 2rem; */
 	}
 	.button_link {
 		text-decoration: none;
@@ -57,20 +59,15 @@ import { paths } from "../const.js";
 		margin: 0;
 	}
 	.nav_li_item {
-		/* flex-grow: 1; */
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
 		text-transform: uppercase;
 	}
-
-	header {
-		margin-bottom: 2rem;
-	}
 	@media (min-width: 768px) {
 		header {
-			margin-bottom: 4.5rem;
+			margin-bottom: 2.25rem;
 		}
 		.nav_wrapper {
 			display: flex;
@@ -83,8 +80,10 @@ import { paths } from "../const.js";
 			padding: 1.8rem 30vw;
 		}
 		.nav_li_item > a {
-			font-size: 1.1rem;
+			/* font-size: 1.1rem; */
+			color: black;
 			padding: 1rem 2.4vw;
+			font-weight: 300;
 			text-decoration: none;
 		}
 		.nav_li_item > a:hover {
