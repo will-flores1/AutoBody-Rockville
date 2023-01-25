@@ -3,50 +3,43 @@ import BaseHead from "../components/BaseHead.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title="404 Page" description="404 Page Not Found Return Home" />
-		<title>404 Page</title>
-	</head>
-	<Layout headline="404 Page" title="404" description="Page Not Found">
-		<div class="error_wrapper">
-			<p class="sorry">Sorry, we couldn't find this page.</p>
-			<p class="dont_worry">
-				But dont worry, you can find plenty of other things on our homepage.
-			</p>
-			<a rel="noopener noreferrer" href="/">Back to homepage</a>
-		</div>
-	</Layout>
+<Layout headline="404 Page" title="404" description="Page Not Found">
+	<div class="error_wrapper">
+		<p class="sorry">Sorry, we couldn't find this page.</p>
+		<p class="dont_worry">
+			But dont worry, you can find plenty of other things on our homepage.
+		</p>
+		<a rel="noopener noreferrer" href="/">Back to homepage</a>
+	</div>
+</Layout>
 
-	<style>
-		.error_wrapper {
-			/* background-color: rgba(0, 0, 0, 0.859); */
-			padding: 1rem;
-			padding-bottom: 4rem;
-		}
+<style>
+	.error_wrapper {
+		/* background-color: rgba(0, 0, 0, 0.859); */
+		padding: 1rem;
+		padding-bottom: 4rem;
+		color: black;
+		height: 100%;
+	}
 
-		a {
-			color: black;
-			padding: 1rem;
-			margin: 1rem 0;
-			background-color: white;
-			box-shadow: inset 0 0 5px #000000;
-		}
+	a {
+		color: black;
+		padding: 1rem;
+		margin: 1rem 0;
+		background-color: white;
+		box-shadow: inset 0 0 5px #000000;
+	}
 
-		.sorry {
-			font-size: 1.875rem /* 30px */;
-			line-height: 2.25rem /* 36px */;
-			font-weight: 600;
-			color: white;
-		}
+	.sorry {
+		font-size: 1.875rem;
+		line-height: 2.25rem /* 36px */;
+		font-weight: 600;
+	}
 
-		.dont_worry {
-			margin-top: 1rem /* 16px */;
-			margin-bottom: 2rem /* 32px */;
-			font-size: 1.125rem /* 18px */;
-			line-height: 1.75rem /* 28px */;
-			color: white;
-		}
-	</style>
-</html>
+	.dont_worry {
+		margin-top: 1rem /* 16px */;
+		margin-bottom: 2rem /* 32px */;
+		font-size: 1.125rem /* 18px */;
+		line-height: 1.75rem /* 28px */;
+	}
+</style>

@@ -66,50 +66,21 @@ const posts = await Astro.glob("./posts/*.md");
 	.faq_wrapper:hover {
 		box-shadow: 2px 1px 0 black;
 	}
-	.faq_wrapper:hover > .btn {
+	.btn {
 		text-decoration: underline;
-	}
-
-	.item_link > h1 {
-		background-color: #3c4043a4;
-		padding: 0.75rem;
-		border-radius: 4px;
-		line-height: 0.88;
-	}
-
-	.item_link > h1:hover {
-		background-color: #3c4043;
-	}
-
-	.item_link > h1:hover > p > span {
-		text-decoration: underline;
-	}
-	.item_link {
-		color: white;
-	}
-	.item_link:visited {
-		text-decoration: none;
-		color: white;
-	}
-	a {
-		text-decoration: none;
 	}
 	.preview_text {
 		padding: 0;
 		margin: 0;
 		text-decoration: none;
-		font-size: 1rem;
 		font-weight: 400;
 		line-height: 0.9;
 		text-transform: lowercase;
 	}
 
 	@media (min-width: 768px) {
-		.item_link > h1 {
-			font-size: 3rem;
-		}
 		.preview_text {
-			font-size: 1.2rem;
+			/* font-size: 1.2rem;? */
 			font-weight: 300;
 		}
 	}

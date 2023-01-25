@@ -38,7 +38,6 @@
 		top: 0;
 		right: 0;
 		height: 100%;
-		border-left: 1px solid #aaa;
 		background: #fff;
 		overflow-y: auto;
 		width: 100%;
@@ -49,15 +48,11 @@
 		margin: 0;
 	}
 	.list_item {
-		padding: 2rem;
+		/* padding: 2rem; */
 		text-transform: uppercase;
 		cursor: pointer;
 	}
-	.list_item:hover > a {
-		color: #ff0000;
-	}
 	.list_item {
-		padding: 0;
 		border-bottom: 1px solid black;
 	}
 	a {
@@ -65,13 +60,14 @@
 		color: black;
 	}
 	a > div {
-		padding: 3rem 1.5rem;
-		font-size: 2.5rem;
-		font-weight: 500;
+		padding: 2.5rem 2rem;
+		font-size: 2rem;
+		font-weight: 400;
 	}
 	.close {
 		background-color: rgb(234, 234, 234);
-		border: 1px solid rgba(0, 0, 0, 0.45);
+		border: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.45);
 		color: white;
 		padding: 0;
 		margin: 0;
