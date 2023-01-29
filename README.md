@@ -1,14 +1,13 @@
 # TO-DO
 
-- [] generate content from frequently question on business type (auto body) and use quillbot to avoid duplicate content
-- [] switch background to rtc
+- [x] generate content from frequently question on business type (auto body) and use quillbot to avoid duplicate content
 - [x] remove tailwind
 - [x] fix tailwind mess
 - [x] research and add robot.txt file
 - [x] optimize image files sizes (webp)
 - [] canonical links meta
 - [x] get rid of image background
-- [] replace .md files with .mdx to use variables (phone number)
+- [] fix h1's in text and h2's
 
 # IDEAS
 
