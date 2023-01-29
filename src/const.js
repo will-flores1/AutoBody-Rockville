@@ -45,19 +45,19 @@ export const SERVICES_PAGE = {
 		"Car Repair on all makes and models for Rockville, Maryland. Paint, Dent, Collision, Bumper Repair. European, Asian, or Domestic car, truck, or SUV.", // 147
 	content: [
 		{
-			title: "AUTO BODY PAINT REPAIR",
+			title: "Auto body paint repair",
 			description:
 				"Our team of experts have the skill and experience to repair any type of damage, from small scratches to major bodywork.",
 			path: "/paint-repair",
 		},
 		{
-			title: "COLLISION REPAIR",
+			title: "Collision repair",
 			description:
 				"From minor dings to major accidents. We offer professional and comprehensive collision repair services.",
 			path: "/collision-repair",
 		},
 		{
-			title: "AUTO DENT REMOVAL",
+			title: "Dent removal",
 			description:
 				"We understand the frustration of unsightly dents on your vehicle. We offer professional and efficient dent removal services.",
 			path: "/dent-removal",
@@ -69,7 +69,7 @@ export const SERVICES_PAGE = {
 			path: "/rust-repair",
 		},
 		{
-			title: "auto detailing",
+			title: "Auto detailing",
 			description: "We'll have your car looking and feeling new.",
 			path: "/auto-detailing",
 		},
@@ -79,19 +79,19 @@ export const SERVICES_PAGE = {
 			path: "/glass-repair-and-replacement",
 		},
 		{
-			title: "FENDER REPAIR",
+			title: "Fender repair",
 			description:
 				"Fender collision? We'll fix any damage to the fenders of a vehicle.",
 			path: "/fender-repair",
 		},
 		{
-			title: "BUMPER REPAIR",
+			title: "Bumper repair",
 			description:
 				"Bumpers play an important role in minimizing body damage. But they also take the brunt of the impact. We specialize in repairing damage to the bumpers of vehicles.",
 			path: "/bumper-repair",
 		},
 		{
-			title: "SCRATCH REPAIR",
+			title: "Scratch repair",
 			description:
 				"Paint scratches, Clear coat scratches, primer scratches, we specialize in scratch repair.",
 			path: "/scratch-repair",
