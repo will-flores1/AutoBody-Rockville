@@ -11,6 +11,13 @@
 <div class="mobile_menu">
 	<div class="logo">
 		<img src="/assets/car_logo.svg" alt="logo" height="30" width="30" />
+		<div class="flex_item">
+			<div><img src="/assets/clock.svg" alt="hours" width="25" /></div>
+			<div>
+				<div>Mon-Fri:</div>
+				<div>9:00am-6:00pm</div>
+			</div>
+		</div>
 	</div>
 	<button on:click={toggle}>
 		<div class="hamburger_menu">
@@ -41,6 +48,13 @@
 	}
 	.logo {
 		color: white;
+		display: flex;
+		align-items: center;
+		gap: 1.3rem;
+	}
+	.flex_item {
+		display: flex;
+		gap: 2px;
 	}
 	button {
 		cursor: pointer;
