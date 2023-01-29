@@ -1,26 +1,94 @@
 ---
 import CallButton from "../components/CallButton.astro";
-import { IF_YOU_NEED_CTA } from "../const.js";
+import {
+	ADDRESS,
+	GOOGLE_MAPS_ADDRESS,
+	IF_YOU_NEED_CTA,
+	PHONE_NUMBER,
+	PHONE_NUMBER_FORMATTED,
+	SERVICES_PAGE,
+} from "../const.js";
 ---
 
-<div class="cta_section_wrapper">
-	<h1 class="cta_headline">If you need...</h1>
-	<ul>
-		{
-			IF_YOU_NEED_CTA.map((item) => (
-				<li class="list_item">
-					<img src={item.icon} alt="gear" class="list_item_icon" />
-					<h2 class="list_item_para">{item.title}</h2>
-				</li>
-			))
-		}
-	</ul>
-	<div style="text-align: center;">
-		<CallButton />
+<div class="section_wrapper">
+	<div class="cta_section_wrapper">
+		<h1 class="cta_headline">If you need...</h1>
+		<ul>
+			{
+				IF_YOU_NEED_CTA.map((item) => (
+					<li class="list_item">
+						<img src={item.icon} alt="gear" class="list_item_icon" />
+						<h2 class="list_item_para">{item.title}</h2>
+					</li>
+				))
+			}
+		</ul>
+		<div style="text-align: center;">
+			<p class="call_us">Call Us Today</p>
+			<CallButton />
+		</div>
+	</div>
+	<div class="text">
+		<h2>Your One-Stop Shop for Auto Body Repairs in Rockville, MD.</h2>
+		<p>
+			When it comes to auto body repairs, it can be a taxing task to find a shop
+			that you trust. You want a shop that is <strong
+				><em>experienced</em></strong
+			>, <strong><em>reliable</em></strong>, and
+			<strong><em>affordable</em></strong>. That's where we comes in. Located in
+			Rockville, MD, we are the <strong>best</strong> auto body shop in the area.
+			We specialize in
+			<ul class="services_links">
+				{
+					SERVICES_PAGE.content.map((item) => (
+						<li>
+							<a href={item.path}>{item.title}</a>
+						</li>
+					))
+				}
+			</ul>
+			<p></p>
+			<p>
+				We understand that getting into a car accident and having damage to your
+				vehicle can be <strong>stressful</strong>. We're dedicated to providing
+				high-quality service to get your car back to you, repaired in
+				pre-accident condition.
+			</p>
+			<p>
+				If you're looking for an auto body repairs in Rockville, MD, call <a
+					href={"tel:" + PHONE_NUMBER}>{PHONE_NUMBER_FORMATTED}</a
+				> or visit us at <a href={GOOGLE_MAPS_ADDRESS} class="info_link_text"
+					>{ADDRESS}</a
+				>.
+			</p>
+		</p>
 	</div>
 </div>
 
 <style>
+	a {
+		color: blue;
+	}
+	em {
+		color: var(--theme-color);
+	}
+	strong {
+		font-size: 1.1rem;
+	}
+	.services_links > li:not(:last-child) {
+		margin-bottom: 14px;
+	}
+	.services_links > li {
+		font-weight: 600;
+		background: rgba(222, 222, 222, 0.489);
+		padding: 20px 8px;
+		width: fit-content;
+		border-radius: 4px;
+	}
+	.call_us {
+		letter-spacing: 4px;
+		margin-bottom: -6px;
+	}
 	.cta_section_wrapper {
 		background-color: rgb(242, 242, 242);
 		text-align: left;
@@ -45,8 +113,18 @@ import { IF_YOU_NEED_CTA } from "../const.js";
 		align-items: center;
 	}
 	@media (min-width: 768px) {
-		.cta_headline {
-			/* font-size: 2.75rem; */
+		.services_links > li:not(:last-child) {
+			margin-bottom: 7px;
+		}
+		.services_links > li {
+			font-weight: normal;
+			background: none;
+			padding: 0;
+		}
+		.section_wrapper {
+			display: grid;
+			grid-template: 1fr / 1fr 1fr;
+			gap: 1rem;
 		}
 	}
 </style>
