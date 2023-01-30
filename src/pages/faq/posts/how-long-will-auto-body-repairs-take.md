@@ -3,7 +3,7 @@
 category: faq
 slug: how-long-will-auto-body-repairs-take
 headline: How Long Will Auto Body Repairs Take?
-title: How Long Will Auto Body Repairs Take? - Auto Body Services FAQ
+title: How Long Will Auto Body Repairs Take? - Auto Body Shop FAQ
 date: 1/23/2023
 description: You may need to visit an auto body shop after an accident or due to wear and tear on your car. One of the most important factors when considering getting your car repaired is the length of time it will take. There's several factors that affect the length of time it takes for auto body repair.
 draft: false

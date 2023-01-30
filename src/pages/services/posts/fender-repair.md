@@ -3,7 +3,7 @@
 category: services
 slug: fender-repair
 headline: Fender Repair
-title: Auto Body Services Rockville - Fender Repair
+title: Auto Body Shop Rockville - Fender Repair
 description: Fender collision? We'll fix any damage to the fenders of a vehicle.
 draft: false
 ---

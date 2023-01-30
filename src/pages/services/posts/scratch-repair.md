@@ -2,7 +2,7 @@
 category: services
 slug: scratch-repair
 headline: Scratch Repair
-title: Auto Body Services Rockville - Scratch Repair
+title: Auto Body Shop Rockville - Scratch Repair
 description: Paint scratches, clear coat scratches, primer scratches, we specialize in scratch repair.
 draft: false
 ---

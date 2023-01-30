@@ -3,7 +3,7 @@
 category: services
 slug: paint-repair
 headline: Paint Repair
-title: Auto Body Services Rockville - Paint Repair
+title: Auto Body Shop Rockville - Paint Repair
 description: From minor dings to major accidents. We use high-quality paint and techniques to restore the original color and finish of your vehicle.
 draft: false
 ---

@@ -2,7 +2,7 @@
 category: faq
 slug: is-my-car-totaled
 headline: Is My Car Totaled?
-title: Is My Car Totaled? - Auto Body Services Rockville
+title: Is My Car Totaled? - Auto Body Shop Rockville
 date: 1/23/2023
 description: Determining if a car is totaled can be a confusing process. If a car is considered totaled, that means the cost of repairs exceeds the value of the car. This is determined by your insurance company, if they believe it is not worth the repair or that it will not be safe to drive after the repair.
 draft: false

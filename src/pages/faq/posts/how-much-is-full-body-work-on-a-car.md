@@ -3,7 +3,7 @@
 category: faq
 slug: how-much-is-full-body-work-on-a-car
 headline: How Much Is Full Body Work On A Car?
-title: How Much Is Full Body Work On A Car? - Auto Body Services Rockville
+title: How Much Is Full Body Work On A Car? - Auto Body Shop Rockville
 date: 1/22/2023
 description: While auto body restoration costs can vary greatly. For a good repair work, you should budget anywhere from $75 to $2,500 on average.
 draft: false
@@ -17,6 +17,6 @@ Once it is located, the proper repair procedure is established, and the repair p
 
 ## Ok now that that's out of the way, let's answer the question
 
-Parts, labour, and other costs might cost anything from $100 to hundreds of dollars.
+Parts, labor, and other costs might cost anything from $100 to hundreds of dollars.
 
-You can research the cost of replacing the damaged parts, the length of the repair procedure, and the labour cost (say $90/hr) to get a general idea of how much it will cost to fix your car. Car bumpers typically cost between $500 and $1,500, and painting a damaged fender costs between $500 and $2,500.
+You can research the cost of replacing the damaged parts, the length of the repair procedure, and the labor cost (say $90/hr) to get a general idea of how much it will cost to fix your car. Car bumpers typically cost between $500 and $1,500, and painting a damaged fender costs between $500 and $2,500.

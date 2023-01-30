@@ -3,7 +3,7 @@
 category: services
 slug: rust-repair
 headline: Rust Repair
-title: Auto Body Services Rockville - Rust Repair
+title: Auto Body Shop Rockville - Rust Repair
 description: We repair or remove rust from your vehicle, to prevent it from spreading and causing more damage
 draft: false
 ---

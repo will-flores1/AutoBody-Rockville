@@ -3,7 +3,7 @@
 category: services
 slug: auto-detailing
 headline: Auto Detailing
-title: Auto Body Services Rockville - Auto Detailing
+title: Auto Body Shop Rockville - Auto Detailing
 description: Auto detailing not only makes your car look good but also helps to maintain its value, by keeping it in top condition. In addition to our detailing services, we also offer a variety of other services such as collision repair, paint repair and rust repair to keep your car in top shape.
 draft: false
 ---
