@@ -12,7 +12,7 @@ draft: false
 
 Dent removal, also known as paintless dent repair (PDR), is a specialized process of removing dents and dings from a vehicle without affecting the original paint. At our auto body shop, we use the latest PDR techniques to ensure the highest quality dent removal.
 
-# What does it include?
+## What does it include?
 
 Our dent removal services include:
 
@@ -26,9 +26,3 @@ PDR is a cost-effective and efficient method of dent removal, as it eliminates t
 In addition to our dent removal services, we also offer a variety of other services such as collision repair, [auto painting](./paint-repair) and [auto detailing](./auto-detailing) to keep your car looking like new.
 
 If you have any questions or concerns, please don't hesitate to reach out to us. We're here to help you keep your car looking its best.
-
-<style>
-	a {
-		color: blue;
-	}
-</style>

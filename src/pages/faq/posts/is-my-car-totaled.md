@@ -8,6 +8,8 @@ description: Determining if a car is totaled can be a confusing process. If a ca
 draft: false
 ---
 
+# Is My Car Totaled?
+
 ## What is a totaled car?
 
 Determining if a car is totaled can be a confusing process. If a car is considered totaled, that means the cost of repairs exceeds the value of the car. This is determined by your insurance company, if they believe it is not worth the repair or that it will not be safe to drive after the repair.

@@ -9,6 +9,8 @@ description: You may need to visit an auto body shop after an accident or due to
 draft: false
 ---
 
+# How Long Will Auto Body Repairs Take?
+
 You may need to visit an auto body shop after an accident or due to wear and tear on your car. One of the most important factors when considering getting your car repaired is the length of time it will take. There's several factors that affect the length of time it takes for auto body repair.
 
 ## Factors that affect Repair time

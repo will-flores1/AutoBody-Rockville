@@ -12,7 +12,7 @@ draft: false
 
 Auto detailing is the process of thoroughly cleaning and restoring the appearance of a vehicle's interior and exterior. At our auto body shop, we use the latest technology and techniques to ensure the highest quality auto detailing.
 
-# What does it include?
+## What does it include?
 
 Our services include:
 
@@ -25,9 +25,3 @@ Our services include:
 Auto detailing not only makes your car look good but also helps to maintain its value, by keeping it in top condition. In addition to our detailing services, we also offer a variety of other services such as [collision repair](./collision-repair), [paint repair](./paint-repair) and [rust repair](./rust-repair) to keep your car in top shape.
 
 We pride ourselves on our commitment to providing quality service and detailing work that is done right the first time. Our team is dedicated to making sure that you are completely satisfied with the work we do on your vehicle. We can ensure that your car will look and feel like new after our detailing services.
-
-<style>
-	a {
-		color: blue;
-	}
-</style>

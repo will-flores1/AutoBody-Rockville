@@ -9,7 +9,7 @@ description: While auto body restoration costs can vary greatly. For a good repa
 draft: false
 ---
 
-## Before we answer this it will help to understand:
+# How Much Is Full Body Work On A Car?
 
 Unforeseen events might result in auto body damage, which makes finding the best repair shop more difficult. Finding the best repair facility is essential after you notice dents or other issues with your paint or auto body. Auto body shops evaluate body damage using a variety of criteria. The repair business examines your car before beginning the repair process. They can now see the genuine auto body damage thanks to this.
 
