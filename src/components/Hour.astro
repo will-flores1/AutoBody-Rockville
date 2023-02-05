@@ -1,0 +1,74 @@
+<div class="hours_label">
+	<span class="line">Hours</span>
+</div>
+<ul class="hour">
+	<li class="monday e1jqeexj9">
+		<span>Mon</span>9:00 AM - 6:00 PM
+	</li>
+	<li class="tuesday e1jqeexj9">
+		<span>Tue</span>9:00 AM - 6:00 PM
+	</li>
+	<li class="wednesday e1jqeexj9">
+		<span>Wed</span>9:00 AM - 6:00 PM
+	</li>
+	<li class="thursday e1jqeexj9">
+		<span>Thu</span>9:00 AM - 6:00 PM
+	</li>
+	<li class="friday e1jqeexj9">
+		<span>Fri</span>9:00 AM - 6:00 PM
+	</li>
+	<li class="saturday e1jqeexj9">
+		<span>Sat</span><span>Closed</span>
+	</li>
+	<li class="sunday e1jqeexj9">
+		<span>Sun</span><span>Closed</span>
+	</li>
+</ul>
+
+<style>
+	ul {
+		list-style: none;
+		width: 80%;
+		margin: auto;
+		padding: 0;
+	}
+	span {
+		color: var(--primary-text);
+	}
+	ul > li {
+		color: var(--primary-text);
+		font-weight: 300;
+		padding: 0 0.2rem 0.5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hours_label {
+		text-align: center;
+		margin-top: 1.3568rem;
+	}
+	.line {
+		color: var(--primary-text);
+		overflow: hidden;
+	}
+
+	.line:before,
+	.line:after {
+		background-color: #fff;
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 30%;
+	}
+
+	.line:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+
+	.line:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+</style>

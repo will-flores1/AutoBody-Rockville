@@ -1,29 +1,56 @@
 ---
 import CallButton from "../components/CallButton.astro";
+import Hour from "../components/Hour.astro";
 ---
 
 <div class="hero_wrapper">
-	<p class="hero_subheading">Free Estimates</p>
+	<div class="wrapper">
+		<div class="service_wrapper">
+			<p class="top_para">Auto Body Services Rockville, MD</p>
+			<h1>Auto Body Repair Center</h1>
+			<p>Safe repairs, clean paint work, stress-free service</p>
+			<CallButton />
+		</div>
+		<Hour />
+	</div>
 </div>
 
 <style>
-	.hero_wrapper {
-		text-align: center;
+	.wrapper {
+		content: "";
+		background-image: linear-gradient(to right, #0072ce 4%, #002855);
+		padding: 1.24537rem var(--mobile-side-padding) 0;
+		inset: 0;
 	}
-
-	.hero_subheading {
-		text-transform: uppercase;
-		margin: 0.3rem 0;
-		/* font-size: 1rem; */
-		text-align: center;
-		letter-spacing: 4px;
+	.top_para {
+		font-weight: 200;
+		margin-bottom: -0.1rem;
+	}
+	h1 {
+		color: var(--primary-text);
+		margin-bottom: 1.436rem;
+	}
+	p {
+		color: var(--primary-text);
+		margin-bottom: 1.2345rem;
+		font-weight: 500;
 	}
 	@media (min-width: 768px) {
+		.wrapper {
+			opacity: 0.85;
+			padding: 10rem var(--laptop-side-padding);
+		}
+		.hero_wrapper {
+			text-align: center;
+			background-image: url(/assets/carbg.png);
+			background-position: top;
+			background-size: cover;
+			/* padding: 10rem; */
+		}
+		.service_wrapper {
+			text-align: left;
+		}
 	}
 	@media (min-width: 1024px) {
-		.hero_subheading {
-			/* font-size: 1.7rem; */
-			line-height: 1;
-		}
 	}
 </style>

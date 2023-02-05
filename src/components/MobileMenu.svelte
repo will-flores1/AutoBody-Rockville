@@ -75,6 +75,9 @@
 		padding: 2rem 0px;
 		cursor: pointer;
 	}
+	img {
+		display: inline-block;
+	}
 	.close:active {
 		background-color: rgba(0, 0, 0, 0.6);
 	}

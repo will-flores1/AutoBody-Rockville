@@ -11,13 +11,6 @@
 <div class="mobile_menu">
 	<div class="logo">
 		<img src="/assets/car_logo.svg" alt="logo" height="30" width="30" />
-		<div class="flex_item">
-			<div><img src="/assets/clock.svg" alt="hours" width="25" /></div>
-			<div>
-				<div>Mon-Fri:</div>
-				<div>9:00am-6:00pm</div>
-			</div>
-		</div>
 	</div>
 	<button on:click={toggle}>
 		<div class="hamburger_menu">
@@ -39,7 +32,7 @@
 
 <style>
 	.mobile_menu {
-		padding: 0.5rem 1.5rem;
+		padding: 0.1232rem var(--mobile-side-padding);
 		margin: 0;
 		display: flex;
 		justify-content: space-between;
@@ -62,10 +55,8 @@
 		margin: 0;
 		padding: 0.7rem;
 		border: none;
-		background-color: Transparent;
 	}
 	button:hover {
-		background-color: Transparent;
 		border: none;
 	}
 

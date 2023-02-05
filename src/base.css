@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+	--primary-text: white;
+	--secondary-text: black;
+	--primary-font: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--secondary-font: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--third-font: "Libre Baskerville", system-ui, -apple-system,
+		BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Helvetica Neue", sans-serif;
+
+	--background-color: #f5f5f5;
+	--neutral-color: #1a1a1b;
+	--theme-color: rgb(255, 106, 0);
+	--theme-two: #f5f5f5;
+	--theme-three: #0088f8;
+	--laptop-side-padding: 6.344rem;
+	--mobile-side-padding: 1.75rem;
+	--mobile-button-padding: 0.25rem 1.25rem;
+}
+* {
+	margin: 0;
+	box-sizing: border-box;
+	line-height: calc(1em + 0.5rem);
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: var(--primary-font);
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--background-color);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+h1 {
+	font-family: var(--secondary-font);
+	line-height: 0.95;
+}
+p {
+	font-family: var(--primary-font);
+	/* line-height: 1.5;
+	letter-spacing: 1px; */
+}

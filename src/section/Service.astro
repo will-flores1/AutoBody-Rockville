@@ -1,10 +1,10 @@
 ---
 import CallButton from "../components/CallButton.astro";
-import { Image } from "@astrojs/image/components";
 import check from "/assets/check.svg";
 ---
 
 <div class="service_wrapper">
+	<h2>Get the care you need, with the expertise you deserve.</h2>
 	<div class="cta">
 		<ul>
 			<li class="list_item">
@@ -21,30 +21,35 @@ import check from "/assets/check.svg";
 			</li>
 		</ul>
 	</div>
-	<div style="text-align: center;">
-		<p class="call_us">Call Us</p>
+	<div>
 		<CallButton />
 	</div>
 </div>
 
 <style>
+	h2 {
+		color: var(--primary-text);
+		font-family: var(--third-font);
+		margin-bottom: 4.8786rem;
+	}
 	h3 {
+		font-family: var(--secondary-font);
 		padding: 0;
 		margin: 0.5rem;
+		color: var(--primary-text);
 	}
-	.call_us {
-		margin: 0;
-		padding: 0;
-		letter-spacing: 4px;
-		padding-top: 0.5rem;
-	}
+
 	.service_wrapper {
+		background-color: var(--theme-three);
 		text-align: left;
+		padding: 2.757rem var(--mobile-side-padding);
 	}
 
 	.cta > ul {
 		margin: 0;
-		padding: 0 2rem;
+		padding: 0 0;
+		margin-bottom: 0.7845rem;
+		margin-left: -6px;
 	}
 	.list_item {
 		display: flex;
