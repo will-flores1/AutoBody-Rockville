@@ -8,8 +8,8 @@ export const GOOGLE_MAPS_ADDRESS =
 	"https://maps.google.com/?q=1621+E+Gude+Dr+Rockville+MD+20850";
 export const LOCATION = "Rockville";
 export const LOCATION_STATE = "MD";
-export const PHONE_NUMBER = "3018804101";
-export const PHONE_NUMBER_FORMATTED = "(301) 880-4101";
+export const PHONE_NUMBER = "3015455130";
+export const PHONE_NUMBER_FORMATTED = "(301) 545-5130";
 
 export const SITE_TITLE = `Auto Body ${LOCATION}. Paint, Dent, Collision Repair`; // 50
 export const SITE_DESCRIPTION = `${PHONE_NUMBER_FORMATTED} - Collision Repair & Auto Body in ${LOCATION}, ${LOCATION_STATE} | dents, scratches, bumpers, fenders. We turn Wrecks into Wonders - Call Us Today.`; // 145
